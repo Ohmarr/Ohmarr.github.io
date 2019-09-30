@@ -7,8 +7,8 @@
   align-items: center;
   .divider-custom-line {
     width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
+    max-width: 12rem;
+    height: 0.33rem;
     background-color: $secondary;
     border-radius: 1rem;
     border-color: $secondary !important;
@@ -19,6 +19,20 @@
       margin-left: 1rem;
     }
   }
+  // .divider-custom-line-2 {
+  //   width: 100%;
+  //   max-width: 12rem;
+  //   height: 0.33rem;
+  //   background-color: $secondary;
+  //   border-radius: 1rem;
+  //   border-color: $secondary !important;
+  //   &:first-child {
+  //     margin-right: 1rem;
+  //   }
+  //   &:last-child {
+  //     margin-left: 1rem;
+  //   }
+  // }
   .divider-custom-icon {
     color: $secondary !important;
     font-size: 2rem;
