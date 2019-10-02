@@ -1,48 +1,35 @@
 // Custom divider with icon
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .divider-custom-line {
-    width: 100%;
-    max-width: 12rem;
-    height: 0.33rem;
-    background-color: $secondary;
-    border-radius: 1rem;
-    border-color: $secondary !important;
-    &:first-child {
-      margin-right: 1rem;
-    }
-    &:last-child {
-      margin-left: 1rem;
-    }
-  }
-  // .divider-custom-line-2 {
-  //   width: 100%;
-  //   max-width: 12rem;
-  //   height: 0.33rem;
-  //   background-color: $secondary;
-  //   border-radius: 1rem;
-  //   border-color: $secondary !important;
-  //   &:first-child {
-  //     margin-right: 1rem;
-  //   }
-  //   &:last-child {
-  //     margin-left: 1rem;
-  //   }
-  // }
-  .divider-custom-icon {
-    color: $secondary !important;
-    font-size: 2rem;
-  }
-  &.divider-light {
-    .divider-custom-line {
-      background-color: $white;
-    }
-    .divider-custom-icon {
-      color: $white !important;
-    }
-  }
+	margin: $small_1 0 $small_1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.divider-custom-line {
+		width: 100%;
+		max-width: $divider_width;
+		height: $divider_height;
+		background-color: $secondary;
+		border-radius: $small_2;
+		border-color: $secondary !important;
+		&:first-child {
+			margin-right: $small_2;
+		}
+		&:last-child {
+			margin-left: $small_2;
+		}
+	}
+
+	.divider-custom-icon {
+		color: $tertiary !important;
+		font-size: $medium_1;
+	}
+	&.divider-light {
+		.divider-custom-line {
+			background-color: $secondary;
+		}
+		.divider-custom-icon {
+			color: $tertiary !important;
+		}
+	}
 }

@@ -1,18 +1,40 @@
 // Variables
 
 // Set custom colors
-$teal: #1abc9c !default;
-$green: #207967 !default;
 $dark-grey: #273b50 !default;
 $UT-orange: #bf5700;
 $UT-dk-blue: #333f48;
-$black: #000000;
-$blue: #359aec;
-$purple: #9202ac;
+$Sam-Parker-Grey:#333333;
+$Omar-Drk-Red:#6d0707;
+
+// CUSTOM FONT SIZE;
+
+$large_1: 3.5rem;
+$large_2: 3.0rem;
+$large_3: 2.5rem;
+$medium_1: 2.0rem;
+$small_1: 1.5rem;
+$small_2: 1.0rem;
+$small_3: 0.5rem;
+
+$divider_width: 12.0rem;
+$divider_height: 0.3333rem;
+
+$face_width: 22.0rem; 
+$portfolio_item_width: 25.0rem; 
+
+$padding_between_section: 5%;
+
+
 
 // Override Bootstrap primary and secondary colors
-$primary: $UT-orange !default;
-$secondary: $UT-dk-blue !default;
+$primary: white !default;
+$secondary: black !default;
+$tertiary: $Omar-Drk-Red;
+$quaternary: #333333;
+$quinary: #009900;
+
+//  quinary, senary, septenary, octonary, nonary, and denary
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,

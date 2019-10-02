@@ -1,30 +1,37 @@
-// Custom extra larg button size
+.btn {
+	color: $tertiary;
+	background-color: darken($primary, 10%);
+	border: 1px;
+	border-radius: 10%;
+}
+
+// Custom extra large button size0
 .btn-xl {
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem;
+	padding: $small_2 $small_1;
+	font-size: $small_1;
 }
 
 // Custom social buttons
 .btn-social {
-  border-radius: 100%;
-  display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
-  justify-content: center;
-  align-items: center;
+	border-radius: 100%;
+	display: inline-flex;
+	width: $large_2;
+	height: $large_2;
+	font-size: $small_1;
+	justify-content: center;
+	align-items: center;
 }
 
 // Scroll to top button
 .scroll-to-top {
-  z-index: 1042;
-  right: 1rem;
-  bottom: 1rem;
-  display: none;
-  a {
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: fade-out($gray-900, 0.5);
-    line-height: 3.1rem;
-  }
+	z-index: 1042;
+	right: $small_2;
+	bottom: $small_2;
+	display: none;
+	a {
+		width: $large_1;
+		height: $large_1;
+		background-color: fade-out($gray-900, 0.5);
+		line-height: $small_2;
+	}
 }
