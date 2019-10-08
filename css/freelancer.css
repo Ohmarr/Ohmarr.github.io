@@ -10799,7 +10799,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (max-width: 768px) {
   #profile-pic .profile-pic-heading {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
   #profile-pic .profile-pic-subheading {
     font-size: 1.75rem;
