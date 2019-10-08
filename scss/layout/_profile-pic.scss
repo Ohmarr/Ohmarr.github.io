@@ -25,6 +25,7 @@
 	#profile-pic {
 		.profile-pic-heading {
 			font-size: $name_small;
+			line-height: $name_small + 0.25rem;
 		}
 		.profile-pic-subheading {
 			font-size: $subheading_small;

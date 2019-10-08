@@ -10577,7 +10577,7 @@ a.text-dark:hover, a.text-dark:focus {
 @media only screen and (max-width: 768px) {
   .page-section-heading {
     font-size: 2.25rem;
-    line-height: 1rem;
+    line-height: 3.25rem;
   }
 }
 
@@ -10800,6 +10800,7 @@ a.text-dark:hover, a.text-dark:focus {
 @media only screen and (max-width: 768px) {
   #profile-pic .profile-pic-heading {
     font-size: 2.25rem;
+    line-height: 2.5rem;
   }
   #profile-pic .profile-pic-subheading {
     font-size: 1.75rem;
