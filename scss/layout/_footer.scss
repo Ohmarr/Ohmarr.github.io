@@ -3,9 +3,22 @@
 	padding-bottom: 5%;
 	background-color: $secondary;
 	color: $primary;
-	align
+	place-content: center;
+	text-align: center;
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+	}
 }
 .copyright {
 	background-color: $secondary;
 	color: $tertiary;
+	padding: $size_01_up 0 $size_01_up 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.hide-when-small {
+		display: none; 
+	}
 }

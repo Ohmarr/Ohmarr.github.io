@@ -1,35 +1,18 @@
 // Styling for page sections
 .page-section {
-	padding: $padding_between_section 0;
+	background-color: $primary; 
+	color: $secondary; 
+	padding: $padding_between_section 0 0 0;
 	.page-section-heading {
-		font-size: $size_02_up;
+		font-size: $heading_large;
 		line-height: $size_00_unit;
-	}
-	@include media-breakpoint-up(lg) {
-		.page-section-heading {
-			font-size: $size_03_up;
-			line-height: $size_00_unit;
-		}
+		text-align: center; 
+		text-transform: uppercase;
 	}
 }
-
-// CUSTOM HEADERS
-.heading {
-	padding: $padding_between_section 0;
-	color: black; 
-	text-transform: uppercase;
-	text-align: center; 
-	.heading-large-0 {
-		font-size: $size_03_up;
+@media only screen and (max-width: 768px) {
+	.page-section-heading {
+		font-size: $heading_small;
 		line-height: $size_00_unit;
-		margin-t	op: 0; 
-		margin-bottom: 0;
-		box-sizing: border-box;
-		// padding: 
 	}
-}; //Main headers; 
-// $heading-1:;
-// $heading-2:;
-// $heading-3:;
-// $heading-4:;
-// $heading-5:;
+}

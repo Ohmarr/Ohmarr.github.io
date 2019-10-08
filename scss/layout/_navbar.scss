@@ -1,7 +1,8 @@
 // Styling for the navbar
-#mainNav {
-	padding-top: 1%;
-	padding-bottom: 1%;
+//large screens (default)
+#OmarNav {
+	background-color: $secondary;
+	padding: 1% 0 1% 0;
 	font-family: $headings-font-family;
 	font-weight: $headings-font-weight;
 	.navbar {
@@ -10,6 +11,8 @@
 	}
 	.navbar-brand {
 		color: $primary;
+		font-size: $size_00_unit;
+		width: 150px;
 	}
 	.navbar-nav {
 		margin-top: $size_00_unit;
@@ -17,9 +20,10 @@
 			margin-left: 0;
 			margin-right: 0;
 			a.nav-link {
-				padding: $size_00_unit 0 $size_00_unit 0;
-				font-size: $size_01_up;
-				color: $primary;		
+				padding: $size_02_down $size_00_unit $size_02_down $size_00_unit;
+				font-size: $subheading_small;
+				color: $primary;
+				text-transform: uppercase;
 				&:hover {
 					color: darken($primary, 20%);
 				}
@@ -34,36 +38,45 @@
 		}
 	}
 	.navbar-toggler {
-		font-size: 80%;
-		padding: 1%;
+		font-size: 1.25rem;
+		padding: 3%;
+		background-color: white; 
+		border-radius: 0.5rem;
 	}
+
 }
-@include media-breakpoint-up(lg) {
-	#mainNav {
-		padding-top: 1%;
-		padding-bottom: 1%;
+//changes when viewed on small screens
+@media only screen and (max-width: 768px) {
+	#OmarNav {
 		transition: padding-top 0.3s, padding-bottom 0.3s;
+		.logo{
+			width: 100px;
+		}
 		.navbar-brand {
-			font-size: $size_01_up;
+			font-size: $size_00_unit;
 			transition: font-size 0.3s;
 		}
 		.navbar-nav {
-			margin-top: 0;
-		}
-		.navbar-nav > li.nav-item > a.nav-link.active {
-			padding: $size_00_unit $size_00_unit $size_00_unit $size_00_unit;
-			margin-left: 0.25rem;
-			margin-right: 0.25rem;
-			color: $primary;
-			background: $secondary;
-			&:active,
-			&:focus,
-			&:hover {
-				background: lighten($secondary, 30%);
+			margin-top: $size_00_unit;
+			li.nav-item > a.nav-link.active {
+				padding: $size_00_unit $size_00_unit $size_00_unit $size_00_unit;
+				margin-left: 0.25rem;
+				margin-right: 0.25rem;
+				color: $primary;
+				background: $secondary;
+				font-size: 1.0rem;
+				&:active,
+				&:focus,
+				&:hover {
+					background: lighten($secondary, 30%);
+				}
 			}
 		}
+		.navbar-toggler {
+			font-size: 1.25rem;
+		}
 	}
-	#mainNav.navbar-shrink {
+	#OmarNav.navbar-shrink {
 		padding-top: 1%;
 		padding-bottom: 1%;
 		.navbar-brand {

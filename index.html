@@ -21,12 +21,10 @@
 <!-- ––––––––––––––––––––––––––––––––––––– * END HEADER * ––––––––––––––––––––––––––––––––––––– -->
 <body id="page-top">
 <!-- ––––––––––––––––––––––––––––––––––––– NAVBAR ––––––––––––––––––––––––––––––––––––– -->
-	<nav class="navbar navbar-expand-lg bg-secondary" id="mainNav">
+	<nav class="navbar navbar-expand-lg" id="OmarNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" src="img/oa-logo-reverse.png" width="150" height="auto" alt="Omar Abusheikh Logo"></a>
-			<button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary rounded" 
-			type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i>
-			</button>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu  <i class="fas fa-bars"></i></button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
@@ -43,31 +41,29 @@
 		</div>
 	</nav>
 <!-- ––––––––––––––––––––––––––––––––––––– * END NAVBAR * ––––––––––––––––––––––––––––––––––––– -->
-<!-- ––––––––––––––––––––––––––––––––––––– * MASTHEAD SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<header class="profile-pic bg-primary text-center">
-		<div class="container d-flex align-items-center flex-column">
-			<!--  Masthead Avatar Image -->
-			<img class="profile-pic-avatar mb-5" src="img/SmallFace.jpg" alt="Profile Pic">
-			<!--  Masthead Heading -->
-			<h1 class="profile-pic-heading text-uppercase mb-0">Omar Abusheikh</h1>
+<!-- ––––––––––––––––––––––––––––––––––––– * PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
+	<section class="page-section profile-pic d-flex flex-column" id="profile-pic">
+		<div class="container">
+			<!--  Profile Pic Avatar Image -->
+			<img class="profile-pic-avatar" src="img/SmallFace.jpg" alt="Profile Pic">
+			<!--  Profile Pic Heading -->
+			<h1 class="profile-pic-heading">Omar Abusheikh</h1>
 			<!--  Icon Divider -->
 			<div class="divider-custom divider-light">
-			<div class="divider-custom-line"></div>
-			<div class="divider-custom-icon">
-				<i class="fas fa-asterisk"></i>
+				<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon"><i class="fas fa-asterisk"></i></div>
+				<div class="divider-custom-line"></div>
 			</div>
-			<div class="divider-custom-line"></div>
-			</div>
-			<!--  Masthead Subheading -->
-			<p class="profile-pic-subheading mb-0">Data Science - Full Stack Development - Machine Learning</p>
+			<!--  Profile Pic Subheading -->
+			<p class="profile-pic-subheading">Data Science - Full Stack Development - Machine Learning</p>
 		</div>
-	</header>
-<!-- ––––––––––––––––––––––––––––––––––––– * END MASTHEAD SECTION * ––––––––––––––––––––––––––––––––––––– -->
+	</section>
+<!-- ––––––––––––––––––––––––––––––––––––– * END PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
 <!-- ––––––––––––––––––––––––––––––––––––– * ABOUT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<section class="page-section bg-primary  mb-0" id="about">
+	<section class="page-section" id="about">
 		<div class="container">
 			<!-- About Section Heading -->
-			<h2 class="page-section-heading text-center text-uppercase ">About Me</h2>	
+			<h2 class="page-section-heading">About Me</h2>	
 			<!-- Icon Divider -->
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
@@ -98,7 +94,7 @@
 	<section class="page-section portfolio" id="portfolio">
 		<div class="container">
 			<!-- Portfolio Section Heading -->
-			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+			<h2 class="page-section-heading">Portfolio</h2>
 			<!--  Icon Divider -->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -134,7 +130,7 @@
 	<section class="page-section" id="contact">
 		<div class="container">
 			<!-- Contact Section Heading -->
-			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+			<h2 class="page-section-heading">Contact Me</h2>
 			<!-- Icon Divider -->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -180,35 +176,33 @@
 	</section>
 <!-- ––––––––––––––––––––––––––––––––––––– * END CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
 <!-- ––––––––––––––––––––––––––––––––––––– * FOOTER SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<footer class="footer text-center">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
-				<!-- Footer Location -->
-				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">LOCATION</h4>
-					<p class="lead mb-0">Austin, Texas 78741</p>
+				<!-- Footer About Text -->
+				<div class="col-lg-4 col-12 py-3">
+					<h4 class="hide-when-small">Please Reach Out To Me</h4>
+					<a class="mb-1" href = "mailto: oabusheikh@gmail.com">oabusheikh@gmail.com</a>
+					<p class="lead mb-1">+15129639461</p>
 				</div>
 				<!-- Footer Social Icons -->
-				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">WEB</h4>
+				<div class="col-lg-4 col-12 py-3">
+					<h4 class="hide-when-small">Web</h4>
 					<a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/oabusheikh/"><i class="fab fa-fw fa-linkedin"></i></a>
 					<a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Ohmarr"><i class="fab fa-fw fa-github"></i></a>
-					<!-- <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-s-in"></i></a>
-					<a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-dribbble"></i></a> -->
 				</div>
-				<!-- Footer About Text -->
-				<div class="col-lg-4">
-					<h4 class="text-uppercase mb-4">Please Reach Out To Me</h4>
-					<a class="mb-0" href = "mailto: oabusheikh@gmail.com">oabusheikh@gmail.com</a>
-					<!-- <p class="lead mb-0">oabusheikh@gmail.com</p> -->
-					<p class="lead mb-0">+15129639461</p>
+
+				<!-- Footer Location -->
+				<div class="col-lg-4 col-12 py-3">
+					<h4 class="hide-when-small">LOCATION</h4>
+					<p class="lead mb-0">Austin, Texas 78741</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 <!-- ––––––––––––––––––––––––––––––––––––– * END FOOTER SECTION * ––––––––––––––––––––––––––––––––––––– -->
 <!-- ––––––––––––––––––––––––––––––––––––– * COPYRIGHT & SMALL SCREEN SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<section class="copyright py-4 text-center">
+	<section class="copyright" id="copyright">
 		<div class="container">
 			<small>Copyright &copy; Ohmarr.github.io 2019</small>
 		</div>

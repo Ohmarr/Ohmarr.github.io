@@ -30,10 +30,6 @@
 	.portfolio-modal-title {
 		font-size: $size_03_up;
 		line-height: $size_00_unit;
-		@include media-breakpoint-up(lg) {
-			font-size: $size_04_up;
-			line-height: $size_00_unit;
-		}
 	}
 	.close {
 		position: absolute;
@@ -46,3 +42,11 @@
 		opacity: 1;
 	}
 }
+
+// changes for small screens
+@media only screen and (max-width: 768px) {
+	.portfolio-modal {
+		.portfolio-modal-title {
+			font-size: $size_01_up;
+			line-height: $size_00_unit;
+		}}}

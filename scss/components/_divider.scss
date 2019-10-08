@@ -32,3 +32,15 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.divider-custom {
+		.divider-custom-line {
+			max-width: 10rem;
+			max-height: 0.25rem;
+		}
+		.divider-custom-icon {
+			font-size: $size_01_up;
+		}
+	}
+}

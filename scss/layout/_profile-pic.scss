@@ -1,32 +1,37 @@
-.profile-pic {
-	padding-top: 12%;
-	padding-bottom: $padding_between_section; 
+// large screens
+#profile-pic {
+	align-content: center;
+	align-items: center!important;
+	text-align: center;
+	background-color: $primary;
 	.profile-pic-heading {
 		color: $secondary;
-		font-size: $size_01_down;
+		font-size: $name_large;
 		line-height: $size_00_unit;
+		text-transform: uppercase;
 	}
 	.profile-pic-subheading {
 		font-size: $size_02_up;
-		padding-top: $padding_between_section;
-		// padding-bottom: $padding_between_section; 
 	}
 	.profile-pic-avatar {
 		border-radius: 100%;
-		width: $face_width;
+		width: 20rem;
+		margin-bottom: 3rem;
+		padding-top: 0rem;
 	}
 }
-@include media-breakpoint-up(lg) {
-	.profile-pic {
-		padding-bottom: $padding_between_section;
+// changes for small screens
+@media only screen and (max-width: 768px) {
+	#profile-pic {
 		.profile-pic-heading {
-			color: $secondary;
-			font-size: $size_03_up;
-			line-height: $size_00_unit;
+			font-size: $name_small;
 		}
 		.profile-pic-subheading {
-			font-size: $size_02_up;
-			padding-top: $padding_between_section;
+			font-size: $subheading_small;
+			margin-bottom: 0rem;
+		}
+		.profile-pic-avatar {
+			width: 15rem;
 		}
 	}
 }

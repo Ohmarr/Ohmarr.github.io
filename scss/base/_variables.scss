@@ -30,6 +30,22 @@
 	// 	4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
 	// 	5 - sets margin or padding to 3rem (48px if font-size is 16px)
 	// 	auto - sets margin to auto
+// –––––––––––––– CSS MEDIA SELECTORS –––––––––––––––––––––––––-
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
+
 
 // Set custom colors
 $dark-grey: #273b50 !default;
@@ -39,7 +55,7 @@ $Sam-Parker-Grey:#333333;
 $Omar-Drk-Red:#6d0707;
 
 // CUSTOM FONT SIZE;
-$5: 1rem;
+// $sz5: 1rem;
 $size_05_up: 3.5rem;
 $size_04_up: 3.0rem;
 $size_03_up: 2.5rem;
@@ -49,6 +65,17 @@ $size_00_unit: 1.0rem;
 $size_01_down: 0.5rem;
 $size_02_down: 0.25rem;
 
+$name_large: 3.0rem;
+$name_small: 2.75rem; 
+
+$heading_large: 2.5rem;
+$heading_small: 2.25rem;
+
+$subheading_large: 2.0rem;
+$subheading_small: 1.75rem;
+
+$text_large: 1.25rem;
+$text_small: .75rem;
 
 $divider_width: 12.0rem;
 $divider_height: 0.3333rem;
