@@ -2,13 +2,34 @@
 .page-section {
 	padding: $padding_between_section 0;
 	.page-section-heading {
-		font-size: $medium_1;
-		line-height: $small_2;
+		font-size: $size_02_up;
+		line-height: $size_00_unit;
 	}
 	@include media-breakpoint-up(lg) {
 		.page-section-heading {
-			font-size: $large_3;
-			line-height: $small_2;
+			font-size: $size_03_up;
+			line-height: $size_00_unit;
 		}
 	}
 }
+
+// CUSTOM HEADERS
+.heading {
+	padding: $padding_between_section 0;
+	color: black; 
+	text-transform: uppercase;
+	text-align: center; 
+	.heading-large-0 {
+		font-size: $size_03_up;
+		line-height: $size_00_unit;
+		margin-t	op: 0; 
+		margin-bottom: 0;
+		box-sizing: border-box;
+		// padding: 
+	}
+}; //Main headers; 
+// $heading-1:;
+// $heading-2:;
+// $heading-3:;
+// $heading-4:;
+// $heading-5:;

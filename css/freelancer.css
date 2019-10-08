@@ -10735,37 +10735,37 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.masthead {
+.profile-pic {
   padding-top: 12%;
   padding-bottom: 5%;
 }
 
-.masthead .masthead-heading {
+.profile-pic .profile-pic-heading {
   color: black;
-  font-size: 2.5rem;
+  font-size: 0.5rem;
   line-height: 1rem;
 }
 
-.masthead .masthead-subheading {
+.profile-pic .profile-pic-subheading {
   font-size: 2rem;
   padding-top: 5%;
 }
 
-.masthead .masthead-avatar {
+.profile-pic .profile-pic-avatar {
   border-radius: 100%;
   width: 22rem;
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .profile-pic {
     padding-bottom: 5%;
   }
-  .masthead .masthead-heading {
+  .profile-pic .profile-pic-heading {
     color: black;
     font-size: 2.5rem;
     line-height: 1rem;
   }
-  .masthead .masthead-subheading {
+  .profile-pic .profile-pic-subheading {
     font-size: 2rem;
     padding-top: 5%;
   }

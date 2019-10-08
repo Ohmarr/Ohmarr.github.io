@@ -4,34 +4,31 @@
 	border: 1px;
 	border-radius: 10%;
 }
-
 // Custom extra large button size0
 .btn-xl {
-	padding: $small_2 $small_1;
-	font-size: $small_1;
+	padding: $size_00_unit $size_01_up;
+	font-size: $size_01_up;
 }
-
 // Custom social buttons
 .btn-social {
 	border-radius: 100%;
 	display: inline-flex;
-	width: $large_2;
-	height: $large_2;
-	font-size: $small_1;
+	width: $size_04_up;
+	height: $size_04_up;
+	font-size: $size_01_up;
 	justify-content: center;
 	align-items: center;
 }
-
 // Scroll to top button
 .scroll-to-top {
 	z-index: 1042;
-	right: $small_2;
-	bottom: $small_2;
+	right: $size_00_unit;
+	bottom: $size_00_unit;
 	display: none;
 	a {
-		width: $large_1;
-		height: $large_1;
+		width: $size_05_up;
+		height: $size_05_up;
 		background-color: fade-out($gray-900, 0.5);
-		line-height: $small_2;
+		line-height: $size_00_unit;
 	}
 }

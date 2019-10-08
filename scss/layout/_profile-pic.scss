@@ -1,36 +1,32 @@
-.masthead {
+.profile-pic {
 	padding-top: 12%;
 	padding-bottom: $padding_between_section; 
-	.masthead-heading {
+	.profile-pic-heading {
 		color: $secondary;
-		font-size: $small_3;
-		line-height: $small_2;
+		font-size: $size_01_down;
+		line-height: $size_00_unit;
 	}
-	.masthead-subheading {
-		font-size: $medium_1;
+	.profile-pic-subheading {
+		font-size: $size_02_up;
 		padding-top: $padding_between_section;
 		// padding-bottom: $padding_between_section; 
 	}
-
-	.masthead-avatar {
+	.profile-pic-avatar {
 		border-radius: 100%;
 		width: $face_width;
 	}
 }
-
 @include media-breakpoint-up(lg) {
-	.masthead {
-		
+	.profile-pic {
 		padding-bottom: $padding_between_section;
-		.masthead-heading {
+		.profile-pic-heading {
 			color: $secondary;
-			font-size: $large_3;
-			line-height: $small_2;
+			font-size: $size_03_up;
+			line-height: $size_00_unit;
 		}
-		.masthead-subheading {
-			font-size: $medium_1;
+		.profile-pic-subheading {
+			font-size: $size_02_up;
 			padding-top: $padding_between_section;
-			// padding-bottom: $padding_between_section; 
 		}
 	}
 }

@@ -1,5 +1,36 @@
 // Variables
 
+//BOOTSTRAP NOTES:
+	// Class FORMAT:
+	// 	{property}{sides}-{size} for xs breakpoint & 
+	// 	{property}{sides}-{breakpoint}-{size} for other breakpoints
+
+	// BreakPoints: 
+	// 	xs (<=576px), 
+	// 	sm (>=576px), 
+	// 	md (>=768px), 
+	// 	lg (>=992px), 
+	// 	xl (>=1200px))
+
+	// Property:
+	// 	m - sets margin
+	// 	p - sets padding
+	// Sides:
+	// 	t - sets margin-top or padding-top
+	// 	b - sets margin-bottom or padding-bottom
+	// 	l - sets margin-left or padding-left
+	// 	r - sets margin-right or padding-right
+	// 	x - sets both padding-left and padding-right or margin-left and margin-right
+	// 	y - sets both padding-top and padding-bottom or margin-top and margin-bottom
+	// 	blank - sets a margin or padding on all 4 sides of the element
+	// 	0 - sets margin or padding to 0
+	// 	1 - sets margin or padding to .25rem (4px if font-size is 16px)
+	// 	2 - sets margin or padding to .5rem (8px if font-size is 16px)
+	// 	3 - sets margin or padding to 1rem (16px if font-size is 16px)
+	// 	4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+	// 	5 - sets margin or padding to 3rem (48px if font-size is 16px)
+	// 	auto - sets margin to auto
+
 // Set custom colors
 $dark-grey: #273b50 !default;
 $UT-orange: #bf5700;
@@ -8,14 +39,16 @@ $Sam-Parker-Grey:#333333;
 $Omar-Drk-Red:#6d0707;
 
 // CUSTOM FONT SIZE;
+$5: 1rem;
+$size_05_up: 3.5rem;
+$size_04_up: 3.0rem;
+$size_03_up: 2.5rem;
+$size_02_up: 2.0rem;
+$size_01_up: 1.5rem;
+$size_00_unit: 1.0rem;
+$size_01_down: 0.5rem;
+$size_02_down: 0.25rem;
 
-$large_1: 3.5rem;
-$large_2: 3.0rem;
-$large_3: 2.5rem;
-$medium_1: 2.0rem;
-$small_1: 1.5rem;
-$small_2: 1.0rem;
-$small_3: 0.5rem;
 
 $divider_width: 12.0rem;
 $divider_height: 0.3333rem;
@@ -24,6 +57,7 @@ $face_width: 22.0rem;
 $portfolio_item_width: 25.0rem; 
 
 $padding_between_section: 5%;
+
 
 
 

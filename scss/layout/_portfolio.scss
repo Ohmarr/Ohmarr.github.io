@@ -20,29 +20,28 @@
 				opacity: 1;
 			}
 			.portfolio-item-caption-content {
-				font-size: $small_1;
+				font-size: $size_01_up;
 			}
 		}
 	}
 }
-
 // Styling for the portfolio modals
 .portfolio-modal {
 	.portfolio-modal-title {
-		font-size: $large_3;
-		line-height: $small_2;
+		font-size: $size_03_up;
+		line-height: $size_00_unit;
 		@include media-breakpoint-up(lg) {
-			font-size: $large_2;
-			line-height: $small_2;
+			font-size: $size_04_up;
+			line-height: $size_00_unit;
 		}
 	}
 	.close {
 		position: absolute;
 		z-index: 1;
-		right: $small_1;
-		top: $small_2;
-		font-size: $large_2;
-		line-height: $small_2;
+		right: $size_01_up;
+		top: $size_00_unit;
+		font-size: $size_04_up;
+		line-height: $size_00_unit;
 		color: $tertiary;
 		opacity: 1;
 	}
