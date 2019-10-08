@@ -4,15 +4,17 @@
 	color: $secondary; 
 	padding: $padding_between_section 0 0 0;
 	.page-section-heading {
-		font-size: $heading_large;
-		line-height: $size_00_unit;
+		font-size: 2.5rem;
+		line-height: 0rem;
 		text-align: center; 
 		text-transform: uppercase;
 	}
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
-	.page-section-heading {
-		font-size: $heading_small;
-		line-height: $heading_small + 1rem;
+	.page-section {
+		.page-section-heading {
+		font-size: 2.0rem;
+		line-height: 2.0rem + 1rem;
+		}
 	}
 }

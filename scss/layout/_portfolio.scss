@@ -1,6 +1,7 @@
 // Styling for the portfolio grid section
 .portfolio {
 	margin-bottom: -30px;
+	padding-bottom: 5%;
 	.portfolio-item {
 		cursor: pointer;
 		position: relative;
@@ -49,4 +50,20 @@
 		.portfolio-modal-title {
 			font-size: $size_01_up;
 			line-height: $size_00_unit;
-		}}}
+		}}
+		// Styling for the portfolio grid section
+	.portfolio {
+		// margin-bottom: -30px;
+		// padding-bottom: 5%;
+		.portfolio-item {
+			// cursor: pointer;
+			// position: relative;
+			// display: block;
+			max-width: 10rem;
+			// margin-bottom: 30px;
+			// border-radius: $border-radius;
+			// overflow: hidden;
+			
+			}
+		}
+	}

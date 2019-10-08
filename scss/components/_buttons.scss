@@ -1,8 +1,9 @@
 .btn {
 	color: $tertiary;
 	background-color: darken($primary, 10%);
-	border: 1px;
-	border-radius: 10%;
+	border: 0.25rem solid $tertiary;
+	border-color: $tertiary;
+	border-radius: 0.5rem;
 }
 // Custom extra large button
 .btn-xl {
