@@ -10,7 +10,7 @@
 		text-transform: uppercase;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
 	.page-section-heading {
 		font-size: $heading_small;
 		line-height: $heading_small + 1rem;

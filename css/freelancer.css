@@ -10574,7 +10574,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .page-section-heading {
     font-size: 2.25rem;
     line-height: 3.25rem;
@@ -10625,7 +10625,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #6d0707 !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .divider-custom .divider-custom-line {
     max-width: 10rem;
     max-height: 0.25rem;
@@ -10730,7 +10730,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   #OmarNav {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -10797,7 +10797,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 0rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   #profile-pic .profile-pic-heading {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -10859,7 +10859,7 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 1.5rem;
     line-height: 1rem;

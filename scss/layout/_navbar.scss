@@ -46,7 +46,7 @@
 
 }
 //changes when viewed on small screens
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
 	#OmarNav {
 		transition: padding-top 0.3s, padding-bottom 0.3s;
 		.logo{
