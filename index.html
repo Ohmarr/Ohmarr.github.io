@@ -34,7 +34,7 @@
 						<a class="nav-link rounded js-scroll-trigger" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link rounded js-scroll-trigger" href="#contact">Contact</a>
+						<a class="nav-link rounded js-scroll-trigger hide-when-small" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -55,7 +55,9 @@
 				<div class="divider-custom-line"></div>
 			</div>
 			<!--  Profile Pic Subheading -->
-			<p class="profile-pic-subheading">Data Science - Full Stack Development - Machine Learning</p>
+			<text class="profile-pic-subheading">Data Science</text>
+			<text class="profile-pic-subheading">Full Stack Development</text>
+			<text class="profile-pic-subheading">Machine Learning</text>
 		</div>
 	</section>
 <!-- ––––––––––––––––––––––––––––––––––––– * END PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
@@ -107,7 +109,17 @@
 				<div class="col-sm-12 col-lg-6">
 					<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
 						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center "><i class="fas fa-plus fa-3x"></i></div>
+							<div class="portfolio-item-caption-content text-center ">
+								<p>Technologies:</p>
+								<ul>
+									<li>sklearn</li>
+									<li>keras</li>
+									<li>pandas</li>
+									<li>numpy</li>
+									<li>matplotlib</li> 
+									<li>Flask - Requests</li>
+								</ul>
+							</div>
 						</div>
 						<img class="img-fluid" src="img/ugly_cat.png" alt="Kitty">
 					</div>
@@ -116,7 +128,17 @@
 				<div class="col-sm-12 col-lg-6">
 					<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
 						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center "><i class="fas fa-plus fa-3x"></i></div>
+							<div class="portfolio-item-caption-content text-center ">
+								<p>Technologies:</p>
+								<ul>
+									<li>JavaScript</li>
+									<li>Leaflet.js</li>
+									<li>API Calls</li>
+									<li>mapbox</li>
+									<li>html</li> 
+									<li>css</li>
+								</ul>
+							</div>
 						</div>
 						<img class="img-fluid" src="img/earth.jpeg" alt="Global Earthquake Project">
 					</div>
@@ -127,7 +149,7 @@
 <!-- ––––––––––––––––––––––––––––––––––––– * END PORTFOLIO SECTION * ––––––––––––––––––––––––––––––––––––– -->
 <!-- ––––––––––––––––––––––––––––––––––––– * CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
 <!-- Contact Section -->
-	<section class="page-section hide-when-small" id="contact">
+	<section class="page-section hide-when-small py-2" id="contact">
 		<div class="container">
 			<!-- Contact Section Heading -->
 			<h2 class="page-section-heading">Contact Me</h2>
@@ -138,10 +160,9 @@
 				<div class="divider-custom-line"></div>
 			</div>
 			<!-- Contact Section Form -->
-			<div class="row">
-				<div class="col-lg-8 mx-auto">
-					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-					<form name="sentMessage" id="contactForm" novalidate="novalidate">
+				<div class="col-lg-8" id="contact-form">
+					<!-- To configure the contact form email address, go to mail/contact_me.php
+						<form name="sentMessage" id="contactForm" novalidate="novalidate">
 						<div class="control-group">
 							<div class="form-group floating-label-form-group controls mb-0 pb-2">
 								<label>Name</label>
@@ -168,10 +189,16 @@
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
 						</div>
-					</form>
+					</form> -->
+					<form name="input" action="https://formspree.io/mqrbplpx" method="POST">
+						<input class="contact-form-element col-12" type="text" name="Name" placeholder="Your Name">
+						<input class="contact-form-element col-12" type="email" name="_replyto" placeholder="Your Email Address">
+						<textarea id="contact-form-message" class="col-12 my-2" name="message" placeholder="Type your Message"></textarea>
+						<input class="btn py-1 my-3" type="Submit" value="Send">
+						<input type="hidden" name="_subject" value="Portfolio Message"/>	
+						<input type="hidden" name="_next" value="thanks.html"/>	
+				      </form>
 				</div>
-			</div>
-
 		</div>
 	</section>
 <!-- ––––––––––––––––––––––––––––––––––––– * END CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
