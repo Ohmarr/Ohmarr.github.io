@@ -30,7 +30,7 @@
 .portfolio-modal {
 	.portfolio-modal-title {
 		font-size: $size_03_up;
-		line-height: $size_00_unit;
+		// line-height: $size_00_unit;
 	}
 	.close {
 		position: absolute;
@@ -38,7 +38,7 @@
 		right: $size_01_up;
 		top: $size_00_unit;
 		font-size: $size_04_up;
-		line-height: $size_00_unit;
+		// line-height: $size_00_unit;
 		color: $tertiary;
 		opacity: 1;
 	}
@@ -49,7 +49,6 @@
 	.portfolio-modal {
 		.portfolio-modal-title {
 			font-size: $size_01_up;
-			line-height: $size_00_unit;
 		}}
 		// Styling for the portfolio grid section
 	.portfolio {

@@ -7,7 +7,7 @@
 	.profile-pic-heading {
 		color: $secondary;
 		font-size: $name_large;
-		line-height: $size_00_unit;
+		// line-height: $size_00_unit;
 		text-transform: uppercase;
 	}
 	.profile-pic-subheading {
@@ -26,7 +26,7 @@
 	#profile-pic {
 		.profile-pic-heading {
 			font-size: $name_small;
-			line-height: $name_small + 0.25rem;
+			// line-height: $name_small + 0.25rem;
 		}
 		.profile-pic-subheading {
 			font-size: $subheading_small;

@@ -10569,7 +10569,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .page-section .page-section-heading {
   font-size: 2.5rem;
-  line-height: 0rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -10577,7 +10576,6 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .page-section .page-section-heading {
     font-size: 2.0rem;
-    line-height: 3rem;
   }
 }
 
@@ -10675,7 +10673,6 @@ a.text-dark:hover, a.text-dark:focus {
   width: 3.5rem;
   height: 3.5rem;
   background-color: rgba(33, 37, 41, 0.5);
-  line-height: 1rem;
 }
 
 #OmarNav {
@@ -10783,7 +10780,6 @@ a.text-dark:hover, a.text-dark:focus {
 #profile-pic .profile-pic-heading {
   color: black;
   font-size: 3rem;
-  line-height: 1rem;
   text-transform: uppercase;
 }
 
@@ -10802,7 +10798,6 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   #profile-pic .profile-pic-heading {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
   #profile-pic .profile-pic-subheading {
     font-size: 1.75rem;
@@ -10848,7 +10843,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.5rem;
-  line-height: 1rem;
 }
 
 .portfolio-modal .close {
@@ -10857,7 +10851,6 @@ a.text-dark:hover, a.text-dark:focus {
   right: 1.5rem;
   top: 1rem;
   font-size: 3rem;
-  line-height: 1rem;
   color: #6d0707;
   opacity: 1;
 }
@@ -10865,7 +10858,6 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 1.5rem;
-    line-height: 1rem;
   }
   .portfolio .portfolio-item {
     max-width: 10rem;
