@@ -1,14 +1,15 @@
-.footer {
-	padding-top: 2%;
-	padding-bottom: 1%;
+#footer {
+	padding: 0 0 1% 0;
 	background-color: $secondary;
 	color: $primary;
 	place-content: center;
 	text-align: center;
+	div {
+		padding: 1.0rem 0.0rem 1.0rem 0.0rem;
+	}
 	h4 {
 		text-transform: uppercase;
 		padding: 3% 0 3% 0;
-		// margin-bottom: 1.5rem;
 	}
 }
 .copyright {
@@ -16,6 +17,12 @@
 	color: $tertiary;
 	padding: 1% 0 1% 0;
 	text-align: center;
+}
+
+#copyright-text {
+	color: $tertiary;
+	font-size:1.25rem;
+	font-weight:300;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {

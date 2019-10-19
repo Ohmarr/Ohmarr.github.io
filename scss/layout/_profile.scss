@@ -1,0 +1,46 @@
+// large screens
+#profile {
+	align-content: center;
+	align-items: center!important;
+	text-align: center;
+	background-color: $primary;
+	#profile-picture {
+		border-radius: 100%;
+		width: 20rem;
+		margin: 1.0rem 0 3.0rem 0;
+		padding: 0 0 0 0;
+	}
+	#profile-heading {
+		color: $secondary;
+		font-size: $name_large;
+		text-transform: uppercase;
+	}
+	.profile-job-title {
+		color: $secondary;
+		background-color: $primary;
+		border: 0;
+		border-radius: 0;
+		font-size: 2.0rem;
+		padding: 0 1.0rem 0 1.0rem;
+	}
+}
+
+#job-title-row {
+	margin: 5% 0 -5% 0;
+}
+
+// changes for small screens
+@media screen and (min-width: 0px) and (max-width: 768px) {
+		#profile-picture {
+			width: 15rem;
+		}
+		#profile {
+			#profile-heading {
+				font-size: $name_small;
+			}
+			.profile-jobtitle {
+				font-size: $subheading_small;
+				margin: 0 0 0 0;
+			}
+	}
+}

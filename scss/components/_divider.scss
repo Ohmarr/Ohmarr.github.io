@@ -1,6 +1,6 @@
 // Custom divider with icon
 .divider-custom {
-	margin: $size_01_up 0 $size_01_up;
+	margin: 1.5rem 0.0rem 1.5rem 0.0rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -10,18 +10,18 @@
 		max-width: $divider_width;
 		height: $divider_height;
 		background-color: $secondary;
-		border-radius: $size_00_unit;
+		border-radius: 1.0rem;
 		border-color: $secondary !important;
 		&:first-child {
-			margin-right: $size_00_unit;
+			margin: 0 1.0rem 0 0;
 		}
 		&:last-child {
-			margin-left: $size_00_unit;
+			margin: 0 0 0 1.0rem;
 		}
 	}
 	.divider-custom-icon {
 		color: $tertiary !important;
-		font-size: $size_02_up;
+		font-size: 2.0rem;
 	}
 	&.divider-light {
 		.divider-custom-line {
@@ -39,7 +39,7 @@
 			max-height: 0.25rem;
 		}
 		.divider-custom-icon {
-			font-size: $size_01_up;
+			font-size: 1.5rem;
 		}
 	}
 }

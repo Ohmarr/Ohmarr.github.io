@@ -10564,7 +10564,14 @@ a.text-dark:hover, a.text-dark:focus {
 .page-section {
   background-color: white;
   color: black;
-  padding: 5% 0 0 0;
+  padding: 5% 0 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .page-section .page-section-heading {
@@ -10580,7 +10587,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom {
-  margin: 1.5rem 0 1.5rem;
+  margin: 1.5rem 0.0rem 1.5rem 0.0rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10598,21 +10605,21 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 12rem;
   height: 0.3333rem;
   background-color: black;
-  border-radius: 1rem;
+  border-radius: 1.0rem;
   border-color: black !important;
 }
 
 .divider-custom .divider-custom-line:first-child {
-  margin-right: 1rem;
+  margin: 0 1.0rem 0 0;
 }
 
 .divider-custom .divider-custom-line:last-child {
-  margin-left: 1rem;
+  margin: 0 0 0 1.0rem;
 }
 
 .divider-custom .divider-custom-icon {
   color: #6d0707 !important;
-  font-size: 2rem;
+  font-size: 2.0rem;
 }
 
 .divider-custom.divider-light .divider-custom-line {
@@ -10633,6 +10640,23 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+#resume-button {
+  border: 0.25rem solid #6d0707;
+  text-align: center;
+  margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+  font-size: 1.5rem;
+}
+
 .btn {
   color: #6d0707;
   background-color: #e6e6e6;
@@ -10641,18 +10665,13 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0.5rem;
 }
 
-.btn-xl {
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
-}
-
 .btn-social {
-  border-radius: 100%;
+  border-radius: 50%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 3rem;
-  height: 3rem;
+  width: 50px;
+  height: 50px;
   font-size: 1.5rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -10660,19 +10679,36 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0.0rem 0.5rem 0.0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .scroll-to-top {
+  position: fixed;
   z-index: 1042;
-  right: 1rem;
-  bottom: 1rem;
+  right: 1.0rem;
+  bottom: 1.0rem;
   display: none;
 }
 
 .scroll-to-top a {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.0rem;
+  height: 3.0rem;
   background-color: rgba(33, 37, 41, 0.5);
+}
+
+#scroll-to-top-button {
+  display: block;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+#about_column1 {
+  margin-left: auto;
+}
+
+#about_column2 {
+  margin-right: auto;
 }
 
 #OmarNav {
@@ -10689,24 +10725,29 @@ a.text-dark:hover, a.text-dark:focus {
 
 #OmarNav .navbar-brand {
   color: white;
-  font-size: 1rem;
+  font-size: 1.0rem;
   width: 150px;
 }
 
+#OmarNav .navbar-logo {
+  width: 150px;
+  height: auto;
+}
+
 #OmarNav .navbar-nav {
-  margin-top: 1rem;
+  margin: 1.0rem 0 0 auto;
 }
 
 #OmarNav .navbar-nav li.nav-item {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 0 0 0;
 }
 
 #OmarNav .navbar-nav li.nav-item a.nav-link {
-  padding: 0.25rem 1rem 0.25rem 1rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   font-size: 1.75rem;
   color: white;
   text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 
 #OmarNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -10723,9 +10764,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 #OmarNav .navbar-toggler {
   font-size: 1.25rem;
-  padding: 3%;
+  padding: 3% 3% 3% 3%;
   background-color: white;
   border-radius: 0.5rem;
+}
+
+#navbarResponsize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -10733,21 +10782,25 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
-  #OmarNav .logo {
-    width: 100px;
+  #OmarNav .navbar {
+    background-color: #6d0707;
+    text-transform: uppercase;
   }
   #OmarNav .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.0rem;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
   }
+  #OmarNav .navbar-logo {
+    width: 100px;
+    height: auto;
+  }
   #OmarNav .navbar-nav {
-    margin-top: 1rem;
+    margin: 1.0rem 0 0 auto;
   }
   #OmarNav .navbar-nav li.nav-item > a.nav-link.active {
-    padding: 1rem 1rem 1rem 1rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    padding: 0.15rem 0 0 0;
+    margin: 0 0.15rem 0 0.15rem;
     color: white;
     background: black;
     font-size: 1.0rem;
@@ -10759,15 +10812,14 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.25rem;
   }
   #OmarNav.navbar-shrink {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1% 0 1% 0;
   }
   #OmarNav.navbar-shrink .navbar-brand {
     font-size: 1.5rem;
   }
 }
 
-#profile-pic {
+#profile {
   -ms-flex-line-pack: center;
   align-content: center;
   -webkit-box-align: center !important;
@@ -10777,53 +10829,87 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: white;
 }
 
-#profile-pic .profile-pic-heading {
+#profile #profile-picture {
+  border-radius: 100%;
+  width: 20rem;
+  margin: 1.0rem 0 3.0rem 0;
+  padding: 0 0 0 0;
+}
+
+#profile #profile-heading {
   color: black;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
-#profile-pic .profile-pic-subheading {
-  font-size: 2rem;
-  padding: 0 1rem 0 1rem;
+#profile .profile-job-title {
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 0;
+  font-size: 2.0rem;
+  padding: 0 1.0rem 0 1.0rem;
 }
 
-#profile-pic .profile-pic-avatar {
-  border-radius: 100%;
-  width: 20rem;
-  margin-bottom: 3rem;
-  padding-top: 0rem;
+#job-title-row {
+  margin: 5% 0 -5% 0;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  #profile-pic .profile-pic-heading {
-    font-size: 2.25rem;
-  }
-  #profile-pic .profile-pic-subheading {
-    font-size: 1.75rem;
-    margin-bottom: 0rem;
-  }
-  #profile-pic .profile-pic-avatar {
+  #profile-picture {
     width: 15rem;
   }
+  #profile #profile-heading {
+    font-size: 2.25rem;
+  }
+  #profile .profile-jobtitle {
+    font-size: 1.75rem;
+    margin: 0 0 0 0;
+  }
 }
 
-.portfolio {
-  margin-bottom: -30px;
-  padding-bottom: 5%;
+.modal-body {
+  text-align: center;
 }
 
-.portfolio .portfolio-item {
+.modal-body .row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal-body .p {
+  margin: 0 0 3.0rem 0;
+}
+
+#project {
+  margin: 0 0 -30px 0;
+  padding: 0 0 0 0;
+}
+
+#project .project-item {
   cursor: pointer;
   position: relative;
   display: block;
   max-width: 25rem;
-  margin-bottom: 30px;
+  margin: auto auto 30px auto;
+  padding: 0 0 1.0rem 0;
   border-radius: 0.5rem;
   overflow: hidden;
 }
 
-.portfolio .portfolio-item .portfolio-item-caption {
+#project .project-item .project-item-caption {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -10833,68 +10919,93 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+#project .project-item .project-item-caption:hover {
   opacity: 1;
 }
 
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+#project .project-item .project-item-caption .project-item-caption-content {
+  text-align: center;
   font-size: 1.5rem;
 }
 
-.portfolio-modal .portfolio-modal-title {
+.project-modal .project-modal-title {
   font-size: 2.5rem;
+  text-transform: uppercase;
+  color: black;
+  margin: 0 0 0 0;
 }
 
-.portfolio-modal .close {
+.project-modal .close {
   position: absolute;
   z-index: 1;
   right: 1.5rem;
-  top: 1rem;
-  font-size: 3rem;
+  top: 1.0rem;
+  font-size: 3.0rem;
   color: #6d0707;
   opacity: 1;
 }
 
+.project-image {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 3.0rem 0;
+}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 1.5rem;
+  .project-modal .project-modal-title {
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 0 0 0;
   }
-  .portfolio .portfolio-item {
+  #project .project-item {
     max-width: 10rem;
+    padding: 0 0 1.0rem 0;
   }
+  #project .project-item .project-item-caption .project-item-caption-content {
+    font-size: 0.75rem;
+  }
+}
+
+#contact {
+  padding: 5% 0.0rem 2% 0.0rem;
 }
 
 #contact-form {
   background-color: #f2f2f2;
   border: 0.15rem solid #6d0707;
   border-radius: 0.5rem;
-  margin: auto;
+  margin: 1% auto 1% auto;
 }
 
 .contact-form-element {
   border-radius: 0.5rem;
-  margin: 0.5rem 0 0.5rem 0;
-  padding: 0.25rem 0 0.25rem 1.0rem;
+  margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+  padding: 0.25rem 0.0rem 0.25rem 1.0rem;
   border: 0.15rem solid #6d0707;
 }
 
 #contact-form-message {
   border-radius: 0.5rem;
-  margin: 0.5rem 0 0.5rem 0;
-  padding: 1.5rem 0 1.5rem 1.0rem;
+  margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+  padding: 1.5rem 0.0rem 1.5rem 1.0rem;
   border: 0.15rem solid #6d0707;
 }
 
-.footer {
-  padding-top: 2%;
-  padding-bottom: 1%;
+#footer {
+  padding: 0 0 1% 0;
   background-color: black;
   color: white;
   place-content: center;
   text-align: center;
 }
 
-.footer h4 {
+#footer div {
+  padding: 1.0rem 0.0rem 1.0rem 0.0rem;
+}
+
+#footer h4 {
   text-transform: uppercase;
   padding: 3% 0 3% 0;
 }
@@ -10904,6 +11015,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: #6d0707;
   padding: 1% 0 1% 0;
   text-align: center;
+}
+
+#copyright-text {
+  color: #6d0707;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {

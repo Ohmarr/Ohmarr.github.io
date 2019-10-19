@@ -1,3 +1,14 @@
+#resume-button {
+	border: 0.25rem solid $tertiary;
+        text-align: center;
+	margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+	font-size: 1.5rem;
+}
+
 .btn {
 	color: $tertiary;
 	background-color: darken($primary, 10%);
@@ -5,31 +16,42 @@
 	border-color: $tertiary;
 	border-radius: 0.5rem;
 }
-// Custom extra large button
-.btn-xl {
-	padding: $size_00_unit $size_01_up;
-	font-size: $size_01_up;
-}
+
 // Custom social buttons
 .btn-social {
-	border-radius: 100%;
+	// display: block;
+
+	border-radius: 50%;
 	display: inline-flex;
-	width: $size_04_up;
-	height: $size_04_up;
-	font-size: $size_01_up;
+	width: 50px; //5=3rem;
+	height: 50px; //5=3rem;
+	font-size: 1.5rem;//4=1.5rem;
 	justify-content: center;
 	align-items: center;
+	margin: 0.0rem 0.5rem 0.0rem 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
+// @media (min-width: 992px){
+// 	.scroll-to-top {
+// 		display: none;
+// 	}
+// }
 // Scroll to top button
 .scroll-to-top {
+	position: fixed;
 	z-index: 1042;
-	right: $size_00_unit;
-	bottom: $size_00_unit;
+	right: 1.0rem;
+	bottom: 1.0rem;
 	display: none;
 	a {
-		width: $size_05_up;
-		height: $size_05_up;
+		width: 3.0rem;
+		height: 3.0rem;
 		background-color: fade-out($gray-900, 0.5);
-		// line-height: $size_00_unit;
 	}
+}
+
+#scroll-to-top-button {
+	display: block; 
+	text-align: center;
+	border-radius: 0.5rem;
 }

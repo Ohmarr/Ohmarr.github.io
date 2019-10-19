@@ -11,19 +11,23 @@
 	}
 	.navbar-brand {
 		color: $primary;
-		font-size: $size_00_unit;
+		font-size: 1.0rem;
 		width: 150px;
 	}
+	.navbar-logo {
+		width: 150px;
+		height: auto; 
+	}
 	.navbar-nav {
-		margin-top: $size_00_unit;
+		margin: 1.0rem 0 0 auto;
 		li.nav-item {
-			margin-left: 0;
-			margin-right: 0;
+			margin-left: 0 0 0 0;
 			a.nav-link {
-				padding: $size_02_down $size_00_unit $size_02_down $size_00_unit;
+				padding: 1.25rem 1.25rem 1.25rem 1.25rem; 
 				font-size: $subheading_small;
 				color: $primary;
 				text-transform: uppercase;
+				border-radius:0.5rem;
 				&:hover {
 					color: darken($primary, 20%);
 				}
@@ -39,29 +43,39 @@
 	}
 	.navbar-toggler {
 		font-size: 1.25rem;
-		padding: 3%;
+		padding: 3% 3% 3% 3%;
 		background-color: white; 
 		border-radius: 0.5rem;
 	}
 
 }
+
+#navbarResponsize {
+	display: flex;
+	flex-basis: auto;
+}
+
 //changes when viewed on small screens
 @media screen and (min-width: 0px) and (max-width: 768px) {
 	#OmarNav {
 		transition: padding-top 0.3s, padding-bottom 0.3s;
-		.logo{
-			width: 100px;
+		.navbar {
+			background-color: $tertiary;
+			text-transform: uppercase;
 		}
 		.navbar-brand {
-			font-size: $size_00_unit;
+			font-size: 1.0rem;
 			transition: font-size 0.3s;
 		}
+		.navbar-logo{
+			width: 100px;
+			height: auto;
+		}
 		.navbar-nav {
-			margin-top: $size_00_unit;
+			margin: 1.0rem 0 0 auto;
 			li.nav-item > a.nav-link.active {
-				padding: $size_00_unit $size_00_unit $size_00_unit $size_00_unit;
-				margin-left: 0.25rem;
-				margin-right: 0.25rem;
+				padding: 0.15rem 0 0 0;
+				margin: 0 0.15rem 0 0.15rem;
 				color: $primary;
 				background: $secondary;
 				font-size: 1.0rem;
@@ -77,10 +91,9 @@
 		}
 	}
 	#OmarNav.navbar-shrink {
-		padding-top: 1%;
-		padding-bottom: 1%;
+		padding: 1% 0 1% 0;
 		.navbar-brand {
-			font-size: $size_01_up;
+			font-size: 1.5rem;
 		}
 	}
 }
