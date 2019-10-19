@@ -10564,7 +10564,7 @@ a.text-dark:hover, a.text-dark:focus {
 .page-section {
   background-color: white;
   color: black;
-  padding: 5% 0 5% 0;
+  padding: 5% 0 1% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10582,7 +10582,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .page-section .page-section-heading {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -10670,8 +10670,8 @@ a.text-dark:hover, a.text-dark:focus {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   font-size: 1.5rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -10703,12 +10703,42 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0.5rem;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #resume-button {
+    border: 0.15rem solid #6d0707;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1.0rem;
+  }
+  .btn-social {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
 #about_column1 {
   margin-left: auto;
 }
 
 #about_column2 {
   margin-right: auto;
+}
+
+#resume-section {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3.0rem 0 3.0rem 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #resume-section {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1.0rem 0 1.0rem 0;
+  }
 }
 
 #OmarNav {
@@ -10739,7 +10769,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #OmarNav .navbar-nav li.nav-item {
-  margin-left: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 #OmarNav .navbar-nav li.nav-item a.nav-link {
@@ -10796,27 +10826,23 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto;
   }
   #OmarNav .navbar-nav {
-    margin: 1.0rem 0 0 auto;
+    margin: 0 0 0 0;
   }
-  #OmarNav .navbar-nav li.nav-item > a.nav-link.active {
-    padding: 0.15rem 0 0 0;
-    margin: 0 0.15rem 0 0.15rem;
-    color: white;
-    background: black;
+  #OmarNav .navbar-nav li.nav-item a.nav-link {
+    font-size: 1.0rem;
+    text-align: center;
+  }
+  .navbar-toggler {
     font-size: 1.0rem;
   }
-  #OmarNav .navbar-nav li.nav-item > a.nav-link.active:active, #OmarNav .navbar-nav li.nav-item > a.nav-link.active:focus, #OmarNav .navbar-nav li.nav-item > a.nav-link.active:hover {
-    background: #4d4d4d;
-  }
-  #OmarNav .navbar-toggler {
-    font-size: 1.25rem;
-  }
-  #OmarNav.navbar-shrink {
-    padding: 1% 0 1% 0;
-  }
-  #OmarNav.navbar-shrink .navbar-brand {
-    font-size: 1.5rem;
-  }
+}
+
+#OmarNav.navbar-shrink {
+  padding: 1% 0 1% 0;
+}
+
+#OmarNav.navbar-shrink .navbar-brand {
+  font-size: 1.5rem;
 }
 
 #profile {
@@ -10832,7 +10858,7 @@ a.text-dark:hover, a.text-dark:focus {
 #profile #profile-picture {
   border-radius: 100%;
   width: 20rem;
-  margin: 1.0rem 0 3.0rem 0;
+  margin: -3.0rem 0 3.0rem 0;
   padding: 0 0 0 0;
 }
 
@@ -10848,22 +10874,33 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
   border-radius: 0;
   font-size: 2.0rem;
-  padding: 0 1.0rem 0 1.0rem;
+  padding: 0 0.0rem 0 1.0rem;
 }
 
 #job-title-row {
-  margin: 5% 0 -5% 0;
+  margin: 5% 0 0 0;
+}
+
+.job-title-modal-title {
+  text-transform: uppercase;
+  margin: 0 -1.0rem 0 auto;
+}
+
+.job-title-modal-body {
+  text-align: left;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  #profile-picture {
+  #profile #profile-picture {
+    padding: 1% 0 6% 0;
+    margin: 0 0 0 0;
     width: 15rem;
   }
   #profile #profile-heading {
-    font-size: 2.25rem;
+    font-size: 2.0rem;
   }
-  #profile .profile-jobtitle {
-    font-size: 1.75rem;
+  #profile .profile-job-title {
+    font-size: 1.5rem;
     margin: 0 0 0 0;
   }
 }
@@ -10893,7 +10930,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   max-width: 25rem;
   margin: auto auto 30px auto;
-  padding: 0 0 1.0rem 0;
+  padding: 0 0 0 0;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -10969,7 +11006,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #contact {
-  padding: 5% 0.0rem 2% 0.0rem;
+  padding: 0 0.0rem 2% 0.0rem;
 }
 
 #contact-form {
