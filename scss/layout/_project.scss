@@ -61,6 +61,11 @@
 	}
 }
 
+.project-item-title {
+	text-align: center;
+	color: $secondary;
+	text-transform: uppercase;
+}
 .project-image {
 	border-radius: 0.5rem;
 	max-width: 100%;
@@ -87,6 +92,9 @@
 				}
 			}
 		}
+	}
+	.project-item-title {
+		font-size: 1.0rem;
 	}
 }
 

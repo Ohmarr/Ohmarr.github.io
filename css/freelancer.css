@@ -10982,6 +10982,12 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1;
 }
 
+.project-item-title {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
 .project-image {
   border-radius: 0.5rem;
   max-width: 100%;
@@ -11002,6 +11008,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #project .project-item .project-item-caption .project-item-caption-content {
     font-size: 0.75rem;
+  }
+  .project-item-title {
+    font-size: 1.0rem;
   }
 }
 
@@ -11052,6 +11061,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #6d0707;
   padding: 1% 0 1% 0;
   text-align: center;
+  place-content: center;
 }
 
 #copyright-text {
