@@ -59,11 +59,11 @@
 			</div>
 			<!--  JOB TITLES & SKILLS -->
 			<div class="row" id="job-title-row">
-				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-4" data-toggle="modal" data-target="#machineLearning">Machine Learning
+				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-3" data-toggle="modal" data-target="#machineLearning">Machine Learning
 				</button>
-				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-4" data-toggle="modal" data-target="#dataScience">Data Science
+				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-3" data-toggle="modal" data-target="#dataScience">Data Science
 				</button>
-				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-4" data-toggle="modal" data-target="#developer">Full-Stack Development
+				<button type="button" class="btn btn-primary profile-job-title col-sm-12 col-md-3" data-toggle="modal" data-target="#developer">Full-Stack Development
 				</button>
 					
 			<!-- Job Title Modals -->
@@ -171,7 +171,7 @@
 			<!-- About Section Button -->
 			<div id="resume-section" class="row col-12">
 				<a id="resume-button" class="btn btn-xl" href="Resume.pdf" target= '_blank'>
-					<i class="fas fa-file-pdf mr-2"></i> View Resume/CV
+					<i id="resume-pdf-icon" class="fas fa-file-pdf"></i> View Resume/CV
 				</a>
 			</div>
 		</div>
@@ -327,8 +327,10 @@
 				<form name="input" action="https://formspree.io/mqrbplpx" method="POST">
 					<input class="contact-form-element col-12" type="text" name="Name" placeholder="Your Name">
 					<input class="contact-form-element col-12" type="email" name="_replyto" placeholder="Your Email Address">
-					<textarea id="contact-form-message" class="col-12 my-2" name="message" placeholder="Type your Message"></textarea>
-					<input class="btn py-1 my-3" type="Submit" value="Send">
+					<textarea id="contact-form-message" class="col-12" name="message" placeholder="Type your Message"></textarea>
+					<div class="row col-12">
+						<input id="contact-send-button" class="btn" type="Submit" value="Send">
+					</div>
 					<input type="hidden" name="_subject" value="Project Message"/>	
 					<input type="hidden" name="_next" value="thanks.html"/>	
 				</form>

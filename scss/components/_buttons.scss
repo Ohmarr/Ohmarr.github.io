@@ -1,20 +1,45 @@
-#resume-button {
-	border: 0.25rem solid $tertiary;
+#resume-pdf-icon {
+	margin: 0 0.5rem 0 0;
+	// border: 0.25rem solid $tertiary;
+        // text-align: center;
+	// margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	// padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+	// font-size: 1.5rem;
+
+}
+
+.btn {
         text-align: center;
 	margin: 0.5rem 0.0rem 0.5rem 0.0rem;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1.0rem 1.0rem 1.0rem 1.0rem;
 	font-size: 1.5rem;
-}
-
-.btn {
 	color: $tertiary;
 	background-color: darken($primary, 10%);
 	border: 0.15rem solid $tertiary;
-	border-color: $tertiary;
 	border-radius: 0.5rem;
+	&:hover {
+		color: darken($tertiary, 5%);
+		border-color: darken($tertiary, 5%);
+		background-color: darken($primary, 20%);
+		font-weight: bold;
+	}
+	&:active,
+	&:focus {
+		color: darken($tertiary, 10%);
+		border-color: darken($tertiary, 10%);
+		background-color: darken($primary, 25%);
+	}
+	&.active {
+		color: darken($tertiary, 15%);
+		border-color: darken($tertiary, 15%);
+		background-color: darken($primary, 30%);
+	}
 }
 
 // Custom social buttons
@@ -30,6 +55,7 @@
 	align-items: center;
 	margin: 0.0rem 0.5rem 0.0rem 0.5rem;
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	background-color: darken($primary, 20%);
 }
 // @media (min-width: 992px){
 // 	.scroll-to-top {

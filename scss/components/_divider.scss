@@ -2,7 +2,7 @@
 .divider-custom {
 	margin: 1.5rem 0.0rem 1.5rem 0.0rem;
 	width: 100%;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	.divider-custom-line {
@@ -20,7 +20,7 @@
 		}
 	}
 	.divider-custom-icon {
-		color: $tertiary !important;
+		color: $tertiary;
 		font-size: 2.0rem;
 	}
 	&.divider-light {
@@ -28,7 +28,7 @@
 			background-color: $secondary;
 		}
 		.divider-custom-icon {
-			color: $tertiary !important;
+			color: $tertiary;
 		}
 	}
 }

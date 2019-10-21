@@ -10589,9 +10589,9 @@ a.text-dark:hover, a.text-dark:focus {
 .divider-custom {
   margin: 1.5rem 0.0rem 1.5rem 0.0rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -10618,7 +10618,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom .divider-custom-icon {
-  color: #6d0707 !important;
+  color: #6d0707;
   font-size: 2.0rem;
 }
 
@@ -10627,7 +10627,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom.divider-light .divider-custom-icon {
-  color: #6d0707 !important;
+  color: #6d0707;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -10640,13 +10640,16 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#resume-button {
-  border: 0.25rem solid #6d0707;
+#resume-pdf-icon {
+  margin: 0 0.5rem 0 0;
+}
+
+.btn {
   text-align: center;
   margin: 0.5rem 0.0rem 0.5rem 0.0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -10655,14 +10658,29 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   padding: 1.0rem 1.0rem 1.0rem 1.0rem;
   font-size: 1.5rem;
-}
-
-.btn {
   color: #6d0707;
   background-color: #e6e6e6;
   border: 0.15rem solid #6d0707;
-  border-color: #6d0707;
   border-radius: 0.5rem;
+}
+
+.btn:hover {
+  color: #550505;
+  border-color: #550505;
+  background-color: #cccccc;
+  font-weight: bold;
+}
+
+.btn:active, .btn:focus {
+  color: #3d0404;
+  border-color: #3d0404;
+  background-color: #bfbfbf;
+}
+
+.btn.active {
+  color: #250202;
+  border-color: #250202;
+  background-color: #b3b3b3;
 }
 
 .btn-social {
@@ -10681,6 +10699,7 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   margin: 0.0rem 0.5rem 0.0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: #cccccc;
 }
 
 .scroll-to-top {
@@ -10869,16 +10888,48 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #profile .profile-job-title {
-  color: black;
-  background-color: white;
-  border: 0;
-  border-radius: 0;
-  font-size: 2.0rem;
-  padding: 0 0.0rem 0 1.0rem;
+  font-size: 1.75rem;
+  padding: 0 0.0 0 0.0;
+  margin: 0 1% 0 1%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #6d0707;
+  background-color: #e6e6e6;
+  border: 0.15rem solid #6d0707;
+  border-radius: 0.5rem;
+}
+
+#profile .profile-job-title:hover {
+  color: #550505;
+  border-color: #550505;
+  background-color: #cccccc;
+}
+
+#profile .profile-job-title:active, #profile .profile-job-title:focus {
+  color: #3d0404;
+  border-color: #3d0404;
+  background-color: #bfbfbf;
+}
+
+#profile .profile-job-title.active {
+  color: #250202;
+  border-color: #250202;
+  background-color: #b3b3b3;
 }
 
 #job-title-row {
   margin: 5% 0 0 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .job-title-modal-title {
@@ -10901,7 +10952,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #profile .profile-job-title {
     font-size: 1.5rem;
-    margin: 0 0 0 0;
+    margin: 2% 0 2% 0;
   }
 }
 
@@ -10920,7 +10971,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #project {
-  margin: 0 0 -30px 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 
@@ -10929,7 +10980,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   display: block;
   max-width: 25rem;
-  margin: auto auto 30px auto;
+  margin: auto auto auto auto;
   padding: 0 0 0 0;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -11001,10 +11052,11 @@ a.text-dark:hover, a.text-dark:focus {
     text-transform: uppercase;
     color: black;
     margin: 0 0 0 0;
+    padding: 0;
   }
   #project .project-item {
     max-width: 10rem;
-    padding: 0 0 1.0rem 0;
+    padding: 0 0 0.0rem 0;
   }
   #project .project-item .project-item-caption .project-item-caption-content {
     font-size: 0.75rem;
@@ -11016,6 +11068,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 #contact {
   padding: 0 0.0rem 2% 0.0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #contact-form {
@@ -11037,6 +11092,18 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0.5rem 0.0rem 0.5rem 0.0rem;
   padding: 1.5rem 0.0rem 1.5rem 1.0rem;
   border: 0.15rem solid #6d0707;
+}
+
+#contact-send-button {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  margin: 1.0rem 0 1.0rem 0;
+  padding: 0 0.25rem 0 0.25rem;
 }
 
 #footer {
