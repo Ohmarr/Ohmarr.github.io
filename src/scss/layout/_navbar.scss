@@ -3,8 +3,8 @@
 #OmarNav {
 	background-color: $secondary;
 	padding: 1% 0 1% 0;
-	font-family: $headings-font-family;
-	font-weight: $headings-font-weight;
+	font-family: $font-1;
+	font-weight: 700;
 	.navbar {
 		background-color: $tertiary;
 		text-transform: uppercase;
@@ -24,7 +24,7 @@
 			margin: 0 0 0 0;
 			a.nav-link {
 				padding: 1.25rem 1.25rem 1.25rem 1.25rem; 
-				font-size: $subheading_small;
+				font-size: 1.75rem;
 				color: $primary;
 				text-transform: uppercase;
 				border-radius:0.5rem;
@@ -103,7 +103,7 @@
 // 		margin-left: 0 0 0 0;
 // 		a.nav-link {
 // 			padding: 1.25rem 1.25rem 1.25rem 1.25rem; 
-// 			font-size: $subheading_small;
+// 			font-size: 1.75rem;
 // 			color: $primary;
 // 			text-transform: uppercase;
 // 			border-radius:0.5rem;

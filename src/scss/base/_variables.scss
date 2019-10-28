@@ -1,93 +1,29 @@
 // Variables
 
 //BOOTSTRAP NOTES:
-	// Class FORMAT:
-	// 	{property}{sides}-{size} for xs breakpoint & 
-	// 	{property}{sides}-{breakpoint}-{size} for other breakpoints
+	// @media screen and (min-width: 0px) and (max-width: 576px) {}
+	// BOOTSTRAP FONTS / SIZES:
+	// let 1.0rem = 16px, then
+	// 0=0, 1=0.25rem, 2=0.5rem, 3=1.0rem(unit), 4=1.5rem, 5=3.0rem
 
-	// changes for screens
-		// @media screen and (min-width: 0px) and (max-width: 576px) {}
-		// @media screen and (min-width: 576px) and (max-width: 768px) {}
-		// @media screen and (min-width: 768px) {}
-
-
-	// BreakPoints: 
-	// 	xs (<=576px), 
-	// 	sm (>=576px), 
-	// 	md (>=768px), 
-	// 	lg (>=992px), 
-	// 	xl (>=1200px))
-
-	// Property:
-	// 	m - sets margin
-	// 	p - sets padding
-	// Sides:
-	// 	t - sets margin-top or padding-top
-	// 	b - sets margin-bottom or padding-bottom
-	// 	l - sets margin-left or padding-left
-	// 	r - sets margin-right or padding-right
-	// 	x - sets both padding-left and padding-right or margin-left and margin-right
-	// 	y - sets both padding-top and padding-bottom or margin-top and margin-bottom
-	// 	blank - sets a margin or padding on all 4 sides of the element
-	// 	0 - sets margin or padding to 0
-	// 	1 - sets margin or padding to .25rem (4px if font-size is 16px)
-	// 	2 - sets margin or padding to .5rem (8px if font-size is 16px)
-	// 	3 - sets margin or padding to 1rem (16px if font-size is 16px)
-	// 	4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
-	// 	5 - sets margin or padding to 3rem (48px if font-size is 16px)
-	// 	auto - sets margin to auto
-// –––––––––––––– CSS MEDIA SELECTORS –––––––––––––––––––––––––-
-// /* Extra small devices (phones, 600px and down) */
-// @media only screen and (max-width: 600px) {...}
-
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {...}
-
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
-
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {...}
-
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {...}
-
-
-// Set custom colors
-$dark-grey: #273b50 !default;
-$UT-orange: #bf5700;
-$UT-dk-blue: #333f48;
-$Sam-Parker-Grey:#333333;
-$Omar-Drk-Red:#6d0707;
-
-// Override Bootstrap primary and secondary colors
-$primary: white !default;
-$secondary: black !default;
+// FONTS & COLORS
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Lato', sans-serif;
+$font-3: 'Comfortaa', cursive;
+$Sam-Parker-Grey: #333333;
+$Omar-Drk-Red: #6d0707;
+$primary: white;
+$secondary: black;
 $tertiary: $Omar-Drk-Red;
 $quaternary: #333333;
 $quinary: #009900;
+$senary: $Sam-Parker-Grey;
+$septenary: $primary;
+$octonary: $primary;
+$nonary: $primary;
+$denary: #ffffff;
 
-//  quinary, senary, septenary, octonary, nonary, and denary
 
-// FONT SIZE;
-// 	0 - 0
-// 	1 - .25rem (4px if font-size is 16px)
-// 	2 - .5rem (8px if font-size is 16px)
-// 	3 - 1rem (16px if font-size is 16px)
-// 	4 - 1.5rem (24px if font-size is 16px)
-// 	5 - 3rem (48px if font-size is 16px)
-
-$name_large: 3.0rem;
-$name_small: 2.25rem; 
-
-$heading_large: 2.5rem;
-$heading_small: 2.25rem;
-
-$subheading_large: 2.0rem;
-$subheading_small: 1.75rem;
-
-$text_large: 1.25rem;
-$text_small: .75rem;
 
 $divider_width: 12.0rem;
 $divider_height: 0.3333rem;
@@ -97,22 +33,15 @@ $project_item_width: 25.0rem;
 
 $padding_between_section: 5%;
 
-// Override Bootstrap font variables
-$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-	"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
-$headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-	"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
-$headings-font-weight: 700 !default;
-
 // Override Bootstrap border variables
-$border-width: 0.125rem !default;
-$border-radius: 0.5rem !default;
-$border-radius-lg: 0.75rem !default;
-$border-radius-sm: 0.25rem !default;
+$border-width: 0.125rem;
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-sm: 0.25rem;
 
 // Override Bootstrap input/button variables
-$input-btn-border-width: $border-width !default;
+$input-btn-border-width: $border-width;
 
 // Override Bootstrap modal variables
-$modal-inner-padding: 4rem 1rem !default;
-$modal-content-border-width: 0 !default;
+$modal-inner-padding: 4rem 1rem;
+$modal-content-border-width: 0;
