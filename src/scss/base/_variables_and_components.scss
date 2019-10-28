@@ -1,0 +1,163 @@
+// VARIABLES & GLOBAL COMPONENTS
+// 0=0, 1=0.25rem, 2=0.5rem, 3=1.0rem(unit), 4=1.5rem, 5=3.0rem
+
+//VARIABLES
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Lato', sans-serif;
+$font-3: 'Comfortaa', cursive;
+$Sam-Parker-Grey: #333333;
+$Omar-Drk-Red: #6d0707;
+$primary: white;
+$secondary: black;
+$tertiary: $Omar-Drk-Red;
+$quaternary: #333333;
+$quinary: #009900;
+$senary: $Sam-Parker-Grey;
+$septenary: $primary;
+$octonary: $primary;
+$nonary: $primary;
+$denary: #ffffff;
+
+$divider_width: 12.0rem;
+$divider_height: 0.3333rem;
+$project_item_width: 25.0rem;
+
+// Override Bootstrap input/button variables
+$input-btn-border-width: 0.125rem;
+
+// GLOBAL CLASSES
+
+.grow {
+	transition: all .2s ease-in-out !important;
+	&:hover {
+		transform: scale(1.15);
+	}
+}
+
+body,
+html {
+	font-family: $font-1;
+	a {
+		color: $primary;
+	}
+	a:hover {
+		color: $tertiary;
+	}
+}
+
+.page-section {
+	background-color: $primary;
+	color: $secondary;
+	padding: 5% 0 1% 0;
+	display: flex;
+	flex-direction: column;
+	.page-section-heading {
+		font-size: 2.5rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+// Custom divider with icon
+.divider-custom {
+	margin: 1.5rem 0.0rem 1.5rem 0.0rem;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	.divider-custom-line {
+		width: 100%;
+		max-width: $divider_width;
+		height: $divider_height;
+		background-color: $secondary;
+		border-radius: 1.0rem;
+		border-color: $secondary !important;
+		&:first-child {
+			margin: 0 1.0rem 0 0;
+		}
+		&:last-child {
+			margin: 0 0 0 1.0rem;
+		}
+	}
+	.divider-custom-icon {
+		color: $tertiary;
+		font-size: 2.0rem;
+	}
+	&.divider-light {
+		.divider-custom-line {
+			background-color: $secondary;
+		}
+		.divider-custom-icon {
+			color: $tertiary;
+		}
+	}
+}
+
+#scroll-to-top {
+	position: fixed;
+	z-index: 1042;
+	right: 1.0rem;
+	bottom: 1.0rem;
+	display: none;
+	a {
+		width: 3.0rem;
+		height: 3.0rem;
+		// background-color: fade-out($gray-900, 0.5);
+	}
+	#scroll-to-top-button {
+		display: block;
+		text-align: center;
+		border-radius: 0.5rem;
+	}
+}
+
+.btn {
+	text-align: center;
+	margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+	font-size: 1.5rem;
+	color: $tertiary !important;
+	background-color: darken($primary, 10%) !important;
+	border: 0.15rem solid $tertiary !important;
+	border-radius: 0.5rem;
+	&:hover {
+		color: darken($tertiary, 5%);
+		border-color: darken($tertiary, 5%);
+		background-color: darken($primary, 20%);
+		font-weight: bold;
+	}
+	&:active,
+	&:focus {
+		color: darken($tertiary, 10%);
+		border-color: darken($tertiary, 10%);
+		background-color: darken($primary, 25%);
+	}
+	&.active {
+		color: darken($tertiary, 15%);
+		border-color: darken($tertiary, 15%);
+		background-color: darken($primary, 30%);
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.page-section {
+		.page-section-heading {
+			font-size: 1.5rem;
+		}
+	}
+	.divider-custom {
+		.divider-custom-line {
+			max-width: 10rem;
+			max-height: 0.25rem;
+		}
+		.divider-custom-icon {
+			font-size: 1.5rem;
+		}
+	}
+	.hide-when-small {
+		display: none;
+	}
+}

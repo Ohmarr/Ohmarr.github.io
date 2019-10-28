@@ -1,0 +1,223 @@
+.modal-content {
+	border: $tertiary 3px solid;
+}
+
+// large screens
+#profile-section {
+	align-content: center;
+	align-items: center !important;
+	text-align: center;
+	background-color: $primary;
+	#profile-picture {
+		border-radius: 100%;
+		// border: 0.05rem solid $tertiary;
+		width: 20rem;
+		margin: -3.0rem 0 3.0rem 0;
+		padding: 0 0 0 0;
+	}
+	#profile-heading {
+		color: $secondary;
+		font-size: 3.0rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	#job-title-section {
+		margin: 5% 0 0 0;
+		justify-content: center;
+		.profile-job-button {
+			font-size: 1.75rem;
+			padding: 0 0.0 0 0.0;
+			margin: 0 1% 0 1%;
+			border-radius: 0.5rem;
+			display: flex;
+		}
+	}
+	.job-title-modal-title {
+		text-transform: uppercase;
+		// text-align: center;
+		margin: 0 -1.0rem 0 auto;
+	}
+	.job-title-modal-body {
+		text-align: left;
+	}
+}
+
+#about-section {
+	#about_column1 {
+		margin-left: auto;
+	}
+	#about_column2 {
+		margin-right: auto;
+	}
+	#resume-section {
+		justify-content: center;
+		padding: 3.0rem 0 3.0rem 0;
+		#resume-button {
+			font-size: 1.75rem;
+			margin: 0 1% 0 1%;
+			border-radius: 0.5rem;
+			#resume-pdf-icon {
+				margin: 0 0.5rem 0 0;
+			}
+		}
+	}
+}
+
+#project-section {
+	margin: 0 0 0 0; //-30px
+	padding: 0 0 0 0;
+	.project-item {
+		cursor: pointer;
+		position: relative;
+		display: block;
+		max-width: $project_item_width;
+		margin: auto auto auto auto;
+		padding: 0 0 0 0;
+		border-radius: $border-radius;
+		overflow: hidden;
+		.project-item-caption {
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: $transition-base;
+			opacity: 0;
+			background-color: fade-out($primary, .1);
+			&:hover {
+				opacity: 1;
+			}
+			.project-item-caption-content {
+				text-align: center;
+				font-size: 1.5rem;
+				border: 0.20rem solid $tertiary;
+				padding: 2.0rem;
+			}
+		}
+		.project-item-title {
+			text-align: center;
+			color: $secondary;
+			text-transform: uppercase;
+		}
+		.project-image {
+			border-radius: 0.5rem;
+			max-width: 100%;
+			height: auto;
+			margin: 0 0 3.0rem 0;
+		}
+	}
+	.project-modal {
+		.project-modal-body {
+			text-align: center;
+			.row {
+				justify-content: center;
+			}
+			.p {
+				margin: 0 0 3.0rem 0;
+			}
+			.project-modal-title {
+				font-size: 2.5rem;
+				text-transform: uppercase;
+				color: black;
+				margin: 0 0 0 0;
+			}
+			.close {
+				position: absolute;
+				z-index: 1;
+				right: 1.5rem;
+				top: 1.0rem;
+				font-size: 3.0rem;
+				color: $tertiary;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#contact-section {
+	padding: 0 0.0rem 2% 0.0rem;
+	display: flex;
+	#contact-form {
+		background-color: darken($primary, 5%);
+		border: 0.15rem solid $tertiary;
+		border-radius: 0.5rem;
+		margin: 1% auto 1% auto;
+		.contact-form-element {
+			border-radius: 0.5rem;
+			margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+			padding: 0.25rem 0.0rem 0.25rem 1.0rem;
+			border: 0.15rem solid $tertiary;
+		}
+		#contact-form-message {
+			border-radius: 0.5rem;
+			margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+			padding: 1.5rem 0.0rem 1.5rem 1.0rem;
+			border: 0.15rem solid $tertiary;
+			#contact-send-button {
+				// display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				background-color: darken($primary, 15%);
+				margin: 1.0rem 0 1.0rem 0;
+				padding: 0 0.25rem 0 0.25rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	#profile-section {
+		#profile-picture {
+			padding: 1% 0 6% 0;
+			margin: 0 0 0 0;
+			width: 15rem;
+		}
+		#profile-heading {
+			font-size: 2.0rem;
+		}
+		.profile-job-button {
+			font-size: 1.5rem;
+			margin: 2% 1% 2% 1% !important;
+		}
+	}
+
+	#about-section {
+		#resume-section {
+			justify-content: center;
+			padding: 1.0rem 0 1.0rem 0;
+			#resume-button {
+				border: 0.15rem solid $tertiary;
+				margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+				font-size: 1.0rem;
+			}
+		}
+	}
+
+	#project-section {
+		.project-item {
+			max-width: 10rem;
+			padding: 0 0 0.0rem 0;
+			.project-item-caption {
+				.project-item-caption-content {
+					font-size: 0.75rem;
+				}
+			}
+			.project-item-title {
+				font-size: 1.0rem;
+			}
+		}
+		.project-modal {
+			.project-modal-title {
+				font-size: 1.0rem;
+				text-transform: uppercase;
+				color: black;
+				margin: 0 0 0 0;
+				padding: 0;
+			}
+		}
+	}
+}
