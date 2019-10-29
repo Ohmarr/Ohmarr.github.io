@@ -143,7 +143,11 @@ html {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+	html, body {
+		margin: 0;
+	}
 	.page-section {
+		padding: 1% 0 1% 0;
 		.page-section-heading {
 			font-size: 1.5rem;
 		}

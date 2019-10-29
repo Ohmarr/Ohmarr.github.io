@@ -71,6 +71,9 @@
 #project-section {
 	margin: 0 0 0 0; //-30px
 	padding: 0 0 0 0;
+	a.external-link {
+		color: $tertiary;
+	}
 	.project-item {
 		cursor: pointer;
 		position: relative;
@@ -115,28 +118,35 @@
 		}
 	}
 	.project-modal {
+		padding: 0;
+		margin: 0;
+		button.close {
+			position: absolute;
+			z-index: 1;
+			right: 1.5rem;
+			top: 1.0rem;
+			font-size: 1.0rem;
+			color: $tertiary;
+			opacity: 1;
+		}
 		.project-modal-body {
 			text-align: center;
-			.row {
-				justify-content: center;
-			}
-			.p {
-				margin: 0 0 3.0rem 0;
-			}
 			.project-modal-title {
 				font-size: 2.5rem;
 				text-transform: uppercase;
 				color: black;
 				margin: 0 0 0 0;
 			}
-			.close {
-				position: absolute;
-				z-index: 1;
-				right: 1.5rem;
-				top: 1.0rem;
-				font-size: 3.0rem;
-				color: $tertiary;
-				opacity: 1;
+			.project-modal-image {
+				border-radius: 0.5rem;
+				max-width: 100%;
+				height: auto;
+				margin: 0 0 5% 0;
+			}
+			p {
+				// font-size: 1.15rem;
+				// margin: 0 0 5% 0;
+				// color: blue;
 			}
 		}
 	}
@@ -214,14 +224,32 @@
 			.project-item-title {
 				font-size: 1.0rem;
 			}
+			.project-image {
+				max-width: 100%;
+				padding: 0;
+				margin: 0;
+			}
 		}
 		.project-modal {
-			.project-modal-title {
+			.proect-modal-body {
 				font-size: 1.0rem;
-				text-transform: uppercase;
-				color: black;
-				margin: 0 0 0 0;
-				padding: 0;
+				.project-modal-title {
+					font-size: 1.0rem !important;
+					text-transform: uppercase;
+					color: black;
+					margin: 0 0 0 0;
+					padding: 5% 0 0 0 !important;
+				}
+				.project-modal-image {
+					max-width: 100%;
+					padding: 0;
+					margin: 1% 0 1% 0 !important;
+				}
+				p {
+					font-size: 1.15rem;
+					margin: 0 0 5% 0;
+					// color: blue;
+				}
 			}
 		}
 	}

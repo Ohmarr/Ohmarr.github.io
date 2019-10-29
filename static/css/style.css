@@ -145,6 +145,12 @@ html a:hover {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  html, body {
+    margin: 0;
+  }
+  .page-section {
+    padding: 1% 0 1% 0;
+  }
   .page-section .page-section-heading {
     font-size: 1.5rem;
   }
@@ -10925,6 +10931,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0 0 0 0;
 }
 
+#project-section a.external-link {
+  color: #6d0707;
+}
+
 #project-section .project-item {
   cursor: pointer;
   position: relative;
@@ -10981,18 +10991,23 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 0 3.0rem 0;
 }
 
+#project-section .project-modal {
+  padding: 0;
+  margin: 0;
+}
+
+#project-section .project-modal button.close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1.0rem;
+  font-size: 1.0rem;
+  color: #6d0707;
+  opacity: 1;
+}
+
 #project-section .project-modal .project-modal-body {
   text-align: center;
-}
-
-#project-section .project-modal .project-modal-body .row {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#project-section .project-modal .project-modal-body .p {
-  margin: 0 0 3.0rem 0;
 }
 
 #project-section .project-modal .project-modal-body .project-modal-title {
@@ -11002,14 +11017,11 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 0 0 0;
 }
 
-#project-section .project-modal .project-modal-body .close {
-  position: absolute;
-  z-index: 1;
-  right: 1.5rem;
-  top: 1.0rem;
-  font-size: 3.0rem;
-  color: #6d0707;
-  opacity: 1;
+#project-section .project-modal .project-modal-body .project-modal-image {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 5% 0;
 }
 
 #contact-section {
@@ -11087,11 +11099,28 @@ a.text-dark:hover, a.text-dark:focus {
   #project-section .project-item .project-item-title {
     font-size: 1.0rem;
   }
-  #project-section .project-modal .project-modal-title {
+  #project-section .project-item .project-image {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #project-section .project-modal .proect-modal-body {
     font-size: 1.0rem;
+  }
+  #project-section .project-modal .proect-modal-body .project-modal-title {
+    font-size: 1.0rem !important;
     text-transform: uppercase;
     color: black;
     margin: 0 0 0 0;
+    padding: 5% 0 0 0 !important;
+  }
+  #project-section .project-modal .proect-modal-body .project-modal-image {
+    max-width: 100%;
     padding: 0;
+    margin: 1% 0 1% 0 !important;
+  }
+  #project-section .project-modal .proect-modal-body p {
+    font-size: 1.15rem;
+    margin: 0 0 5% 0;
   }
 }
