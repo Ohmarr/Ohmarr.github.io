@@ -1,3 +1,8 @@
+@import "variables_and_components.scss";
+@import "bootstrap/scss/bootstrap.scss";
+// @import "style.scss";
+@import "navbar_and_footer.scss"; //Navbar / Logo / Menu
+
 .modal-content {
 	border: $tertiary 3px solid;
 }

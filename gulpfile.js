@@ -6,26 +6,12 @@ const browsersync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
 const gulp = require('gulp');
-const header = require('gulp-header');
+// const header = require('gulp-header');
 const merge = require('merge-stream');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
-
-// Load package.json for banner
-const pkg = require('./package.json');
-
-// Set the banner content
-const banner = [
-	'/*!\n',
-	' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-	' * Copyright 2013-' + new Date().getFullYear(),
-	' <%= pkg.author %>\n',
-	' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-	' */\n',
-	'\n'
-].join('');
 
 function browserSync(done) {
 	/**
@@ -52,7 +38,7 @@ function cleanDirectories() {
 	/**
 	 *  Delete Old Files in Directories; 
 	 */
-	return del([ './vendor/', './css/vendor/', './js/vendor/' ]);
+	return del([ './vendor/', './css/vendor/', './js/vendor/', './static/css/' ]);
 }
 
 function modules() {
@@ -94,15 +80,7 @@ function cssTasks() {
 		.pipe(
 			autoprefixer({
 				browsers: [ 'last 2 versions' ],
-				//       browsers: ['>1%'],
-
-				//       "browserslist": "defaults",
 				cascade: false
-			})
-		)
-		.pipe(
-			header(banner, {
-				pkg: pkg
 			})
 		)
 		.pipe(gulp.dest('./static/css'))
@@ -116,19 +94,13 @@ function cssTasks() {
 		.pipe(browsersync.stream());
 }
 
-// JS task
 function jsTasks() {
-		/**
-	 *  
+	/**
+	 * JavaScript Tasks  
 	 */
 	return gulp
 		.src([ './src/js/*.js', '!./src/js/*.min.js' ])
 		.pipe(uglify())
-		.pipe(
-			header(banner, {
-				pkg: pkg
-			})
-		)
 		.pipe(
 			rename({
 				suffix: '.min'
@@ -138,10 +110,9 @@ function jsTasks() {
 		.pipe(browsersync.stream());
 }
 
-// Watch files
 function watchFiles() {
-		/**
-	 *  
+	/**
+	 *  Monitor for Changes to CSS, JS; recompile & reload browser; 
 	 */
 	gulp.watch('./src/scss/**/*', cssTasks);
 	gulp.watch([ './src/js/**/*', '!./js/**/*.min.js' ], jsTasks);
