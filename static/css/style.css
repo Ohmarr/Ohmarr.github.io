@@ -11293,7 +11293,7 @@ footer #footer-copyright-section #copyright-text {
   }
   #OmarNav #navbar-logo {
     width: 100px;
-    height: 100px;
+    height: auto;
   }
   #OmarNav .navbar-nav {
     margin: 0 0 0 0;
