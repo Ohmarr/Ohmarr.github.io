@@ -13,6 +13,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 
+
 function browserSync(done) {
 	/**
 	 * INITIATE BROWSERSYNC 
@@ -79,8 +80,9 @@ function cssTasks() {
 		.on('error', sass.logError)
 		.pipe(
 			autoprefixer({
-				browsers: [ 'last 2 versions' ],
-				cascade: false
+				// browsers: [ 'last 2 versions' ],
+				cascade: false 
+				// grid: true
 			})
 		)
 		.pipe(gulp.dest('./static/css'))
@@ -93,6 +95,13 @@ function cssTasks() {
 		.pipe(gulp.dest('./static/css'))
 		.pipe(browsersync.stream());
 }
+// var processors = [
+	// 	autoprefixer(  {
+		//      browsers: AUTOPREFIXER,
+		// 	cascade: false,
+		// 	grid: true
+		// 	})
+	//       ];
 
 function jsTasks() {
 	/**

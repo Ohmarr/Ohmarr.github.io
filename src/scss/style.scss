@@ -54,16 +54,16 @@
 	#about_column2 {
 		margin-right: auto;
 	}
-	#resume-section {
-		justify-content: center;
-		padding: 3.0rem 0 3.0rem 0;
-		#resume-button {
-			font-size: 1.75rem;
-			margin: 0 1% 0 1%;
-			border-radius: 0.5rem;
-			#resume-pdf-icon {
-				margin: 0 0.5rem 0 0;
-			}
+}
+#resume-section {
+	justify-content: center;
+	padding: 3.0rem 0 3.0rem 0;
+	#resume-button {
+		font-size: 1.75rem;
+		margin: 0 1% 0 1%;
+		border-radius: 0.5rem;
+		#resume-pdf-icon {
+			margin: 0 0.5rem 0 0;
 		}
 	}
 }
@@ -178,6 +178,32 @@
 				background-color: darken($primary, 15%);
 				margin: 1.0rem 0 1.0rem 0;
 				padding: 0 0.25rem 0 0.25rem;
+			}
+		}
+	}
+}
+
+#thanks-section {
+	font-size: 2.0rem;
+	padding: 2% 0 2% 0;
+	#thanks-header {
+		padding: 2% 0 2% 0 !important;
+	}
+	#thanks_column {
+		justify-content: center;
+	}
+	p {
+		font-size: 1.75rem;
+	}
+	#resume-section-thanks {
+		justify-content: center;
+		padding: 1.0rem 0 1.0rem 0;
+		#resume-button {
+			font-size: 1.15rem;
+			margin: 0 1% 0 1%;
+			border-radius: 0.5rem;
+			#resume-pdf-icon {
+				margin: 0 0.5rem 0 0;
 			}
 		}
 	}

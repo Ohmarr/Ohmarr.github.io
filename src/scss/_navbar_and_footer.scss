@@ -12,6 +12,18 @@
 			filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
 		}
 	}
+	.container-fluid {
+		justify-content: center;
+		#navbar-logo-thanks {
+			width: 150px;
+			height: auto;
+			color: $primary;
+			// justify-content: center;
+			&.grow:hover {
+				filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
+			}
+		}
+	}
 	.navbar-toggler {
 		font-size: 1.25rem;
 		// padding: 3% 3% 3% 3%;
@@ -36,12 +48,21 @@
 	}
 }
 
-#footer {
+footer {
+	flex-shrink: 0;
 	padding: 0 0 1% 0;
 	background-color: $secondary;
 	color: $primary;
 	place-content: center;
 	text-align: center;
+	a {
+		color: $primary;
+		&:hover {
+			color: $tertiary;
+			font-weight: bolder;
+			text-decoration: none;
+		}
+	}
 	div {
 		padding: 1% 0.0rem 1% 0.0rem;
 	}
