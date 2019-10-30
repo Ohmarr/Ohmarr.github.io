@@ -1,7 +1,7 @@
 <!--⇧⌘V-To Preview-->
 <h1 align=center>Repository for: https://Ohmarr.github.io</h1>
 
-<img id="profile-picture" href="https://github.com/Ohmarr/Ohmarr.github.io/blob/master/src/assets/SmallFace.jpg" alt="Picture of Omar">
+<img id="profile-picture" src="https://github.com/Ohmarr/Ohmarr.github.io/blob/master/src/assets/SmallFace.jpg" alt="Picture of Omar">
 
 <hr>
 
