@@ -10,3 +10,11 @@
 <h3 align=center>The website was built with Node.js, node package manager (npm), & the gulp (JavaScript toolkit) streaming build system.  </h3>
 
 <h3 align=center>The Logo in my navbar & the website icon ('favicons') were also created by me, and cannot be copied or reproduced.</h3>
+<style>
+	#profile-picture {
+		border-radius: 100%;
+		width: 20rem;
+		margin: -3.0rem 0 3.0rem 0;
+		padding: 0 0 0 0;
+	}
+</style>
