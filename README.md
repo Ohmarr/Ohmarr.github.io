@@ -1,8 +1,6 @@
 <!--⇧⌘V-To Preview-->
 <h1 align=center>Repository for: https://Ohmarr.github.io</h1>
-<kbd>
-<img id="profile-picture" src="https://github.com/Ohmarr/Ohmarr.github.io/blob/master/src/assets/SmallFace.jpg" alt="Picture of Omar">
-</kbd>
+
 <hr>
 
 <h3 align=center> This repository contains all of the data needed for my personal website portfolio page.</h3>
