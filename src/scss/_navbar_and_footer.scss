@@ -86,8 +86,27 @@ footer {
 			padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 			width: 75px; //5=3rem;
 			border: 0.2rem solid $tertiary;
+			&.grow:hover {
+				background-color: darken($primary, 20%);
+				border-color: darken($tertiary, 5%);
+				color: darken($tertiary, 5%);
+				font-weight: bold;
+				}
+			}
+			&:active,
+			&:focus {
+				background-color: darken($primary, 25%);
+				border-color: darken($tertiary, 10%);
+				color: darken($tertiary, 10%);
+			}
+			&.active {
+				background-color: darken($primary, 30%);
+				border-color: darken($tertiary, 15%);
+				color: darken($tertiary, 15%);
+			}
+
+
 		}
-	}
 	#footer-copyright-section {
 		background-color: $secondary;
 		color: $tertiary;
@@ -115,7 +134,7 @@ footer {
 		}
 		#navbar-logo {
 			width: 100px;
-			height: auto;
+			height: 100px;
 		}
 		.navbar-nav {
 			margin: 0 0 0 0;

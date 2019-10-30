@@ -11246,6 +11246,25 @@ footer #footer-links-section .btn-social {
   border: 0.2rem solid #6d0707;
 }
 
+footer #footer-links-section .btn-social.grow:hover {
+  background-color: #cccccc;
+  border-color: #550505;
+  color: #550505;
+  font-weight: bold;
+}
+
+footer #footer-links-section:active, footer #footer-links-section:focus {
+  background-color: #bfbfbf;
+  border-color: #3d0404;
+  color: #3d0404;
+}
+
+footer #footer-links-section.active {
+  background-color: #b3b3b3;
+  border-color: #250202;
+  color: #250202;
+}
+
 footer #footer-copyright-section {
   background-color: black;
   color: #6d0707;
@@ -11274,7 +11293,7 @@ footer #footer-copyright-section #copyright-text {
   }
   #OmarNav #navbar-logo {
     width: 100px;
-    height: auto;
+    height: 100px;
   }
   #OmarNav .navbar-nav {
     margin: 0 0 0 0;
