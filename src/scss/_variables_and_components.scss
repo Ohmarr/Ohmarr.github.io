@@ -48,7 +48,7 @@ html {
 .page-section {
 	background-color: $primary;
 	color: $secondary;
-	padding: 5% 0 1% 0;
+	padding: 2% 0 1% 0;
 	display: flex;
 	flex-direction: column;
 	.page-section-heading {
@@ -60,12 +60,14 @@ html {
 
 // Custom divider with icon
 .divider-custom {
-	margin: 1.5rem 0.0rem 1.5rem 0.0rem;
+	
+	margin: 1% 0 0 0;
 	width: 100%;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	.divider-custom-line {
+		height: 1.0rem;
 		width: 100%;
 		max-width: $divider_width;
 		height: $divider_height;
@@ -83,14 +85,7 @@ html {
 		color: $tertiary;
 		font-size: 2.0rem;
 	}
-	&.divider-light {
-		.divider-custom-line {
-			background-color: $secondary;
-		}
-		.divider-custom-icon {
-			color: $tertiary;
-		}
-	}
+
 }
 
 #scroll-to-top {

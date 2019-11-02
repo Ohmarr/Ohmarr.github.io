@@ -1,7 +1,7 @@
-@import "variables_and_components.scss";
-@import "bootstrap/scss/bootstrap.scss";
-// @import "style.scss";
-@import "navbar_and_footer.scss"; //Navbar / Logo / Menu
+@import 'variables_and_components.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+// @import 'style.scss';
+@import 'navbar_and_footer.scss'; //Navbar / Logo / Menu
 
 .modal-content {
 	border: $tertiary 3px solid;
@@ -16,22 +16,25 @@
 	#profile-picture {
 		border-radius: 100%;
 		// border: 0.05rem solid $tertiary;
-		width: 20rem;
-		margin: -3.0rem 0 3.0rem 0;
+		width: 15rem;
+		margin: 0 0 2.0rem 0;
 		padding: 0 0 0 0;
 	}
 	#profile-heading {
 		color: $secondary;
 		font-size: 3.0rem;
 		text-transform: uppercase;
+		padding: 0 0 0 0;
+		margin: 0;
 		font-weight: 700;
 	}
 	#job-title-section {
-		margin: 5% 0 0 0;
+		margin: 2% 0 0 0;
 		justify-content: center;
 		.profile-job-button {
-			font-size: 1.75rem;
-			padding: 0 0.0 0 0.0;
+			font-size: 1.33rem;
+			font-weight: 700;
+			padding: 1% 0.0 1% 0.0;
 			margin: 0 1% 0 1%;
 			border-radius: 0.5rem;
 			display: flex;
@@ -57,11 +60,14 @@
 }
 #resume-section {
 	justify-content: center;
-	padding: 3.0rem 0 3.0rem 0;
+	padding: 1% 0 1% 0;
 	#resume-button {
-		font-size: 1.75rem;
-		margin: 0 1% 0 1%;
+		font-weight: bold; 
+		font-size: 1.33rem;
+		padding: 1% 1% 1% 1%;
+		margin: 0;
 		border-radius: 0.5rem;
+		display: flex; 
 		#resume-pdf-icon {
 			margin: 0 0.5rem 0 0;
 		}
@@ -70,55 +76,66 @@
 
 #project-section {
 	margin: 0 0 0 0; //-30px
-	padding: 0 0 0 0;
+	// padding: 0 0 2% 0;
 	a.external-link {
 		color: $tertiary;
 	}
+	#project-grid {
+		justify-content: center;
+	}
 	.project-item {
+		text-align: center;
 		cursor: pointer;
 		position: relative;
 		display: block;
 		max-width: $project_item_width;
 		margin: auto auto auto auto;
-		padding: 0 0 0 0;
+		padding: 1% 0 1% 0;
 		border-radius: $border-radius;
 		overflow: hidden;
-		.project-item-caption {
+		align-content: center;
+		.project-item-content {
+			// text-align: center !important;
+			border: 0.20rem solid $tertiary;
 			align-items: center;
 			justify-content: center;
-			height: 100%;
-			width: 100%;
+			height: 400px;
+			width: 400px;
 			display: flex;
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: 0%;
 			transition: $transition-base;
 			opacity: 0;
 			background-color: fade-out($primary, .1);
 			&:hover {
 				opacity: 1;
 			}
-			.project-item-caption-content {
+			.project-item-content-info {
 				text-align: center;
 				font-size: 1.5rem;
-				border: 0.20rem solid $tertiary;
-				padding: 2.0rem;
+				// border: 0.20rem solid $tertiary;
+				// padding: 2.0rem;
+				p {
+					font-weight: 700;
+				}
 			}
 		}
 		.project-item-title {
 			text-align: center;
 			color: $secondary;
+			font-weight: 700;
 			text-transform: uppercase;
 		}
 		.project-image {
 			border-radius: 0.5rem;
-			max-width: 100%;
-			height: auto;
-			margin: 0 0 3.0rem 0;
+			max-width: 350px;
+			height: 350px;
+			margin: 0 0 0rem 0;
 		}
 	}
 	.project-modal {
-		padding: 0;
+		padding: 0 !important;
 		margin: 0;
 		button.close {
 			position: absolute;
@@ -132,14 +149,16 @@
 		.project-modal-body {
 			text-align: center;
 			.project-modal-title {
-				font-size: 2.5rem;
+				padding: 5% 0 0 0;
+				font-size: 2.0rem;
+				font-weight: 700;
 				text-transform: uppercase;
 				color: black;
 				margin: 0 0 0 0;
 			}
 			.project-modal-image {
 				border-radius: 0.5rem;
-				max-width: 100%;
+				max-width: 450px;
 				height: auto;
 				margin: 0 0 5% 0;
 			}
@@ -153,7 +172,7 @@
 }
 
 #contact-section {
-	padding: 0 0.0rem 2% 0.0rem;
+	// padding: 0 0.0rem 2% 0.0rem;
 	display: flex;
 	#contact-form {
 		background-color: darken($primary, 5%);
@@ -237,15 +256,12 @@
 			}
 		}
 	}
-
 	#project-section {
 		.project-item {
 			max-width: 10rem;
 			padding: 0 0 0.0rem 0;
-			.project-item-caption {
-				.project-item-caption-content {
-					font-size: 0.75rem;
-				}
+			.project-item-content {
+				visibility: hidden;
 			}
 			.project-item-title {
 				font-size: 1.0rem;
@@ -254,6 +270,8 @@
 				max-width: 100%;
 				padding: 0;
 				margin: 0;
+				height: 150px;
+				width: 150px;
 			}
 		}
 		.project-modal {
@@ -274,7 +292,6 @@
 				p {
 					font-size: 1.15rem;
 					margin: 0 0 5% 0;
-					// color: blue;
 				}
 			}
 		}
