@@ -11363,6 +11363,10 @@ footer #footer-copyright-section #copyright-text {
   text-align: left;
 }
 
+#about-section .row {
+  padding: 2% 0 0 0;
+}
+
 #about-section #about_column1 {
   margin-left: auto;
 }
@@ -11380,7 +11384,7 @@ footer #footer-copyright-section #copyright-text {
   text-indent: 5.0rem;
 }
 
-#resume-section {
+#about-section #resume-section {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -11388,7 +11392,7 @@ footer #footer-copyright-section #copyright-text {
   padding: 1% 0 1% 0;
 }
 
-#resume-section #resume-button {
+#about-section #resume-section #resume-button {
   font-weight: bold;
   font-size: 1.33rem;
   padding: 1% 1% 1% 1%;
@@ -11400,7 +11404,7 @@ footer #footer-copyright-section #copyright-text {
   display: flex;
 }
 
-#resume-section #resume-button #resume-pdf-icon {
+#about-section #resume-section #resume-button #resume-pdf-icon {
   margin: 0 0.5rem 0 0;
 }
 

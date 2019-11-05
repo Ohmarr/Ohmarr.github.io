@@ -51,6 +51,9 @@
 }
 
 #about-section {
+	.row {
+		padding: 2% 0 0 0;
+	}
 	#about_column1 {
 		margin-left: auto;
 	}
@@ -66,22 +69,23 @@
 		text-indent: 5.0rem; 
 
 	}
-}
-#resume-section {
-	justify-content: center;
-	padding: 1% 0 1% 0;
-	#resume-button {
-		font-weight: bold; 
-		font-size: 1.33rem;
-		padding: 1% 1% 1% 1%;
-		margin: 0;
-		border-radius: 0.5rem;
-		display: flex; 
-		#resume-pdf-icon {
-			margin: 0 0.5rem 0 0;
+	#resume-section {
+		justify-content: center;
+		padding: 1% 0 1% 0;
+		#resume-button {
+			font-weight: bold; 
+			font-size: 1.33rem;
+			padding: 1% 1% 1% 1%;
+			margin: 0;
+			border-radius: 0.5rem;
+			display: flex; 
+			#resume-pdf-icon {
+				margin: 0 0.5rem 0 0;
+			}
 		}
 	}
 }
+
 
 #project-section {
 	margin: 0 0 0 0; //-30px
