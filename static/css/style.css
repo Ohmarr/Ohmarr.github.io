@@ -11371,6 +11371,15 @@ footer #footer-copyright-section #copyright-text {
   margin-right: auto;
 }
 
+#about-section .about-p-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  text-indent: 5.0rem;
+}
+
 #resume-section {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -11408,6 +11417,10 @@ footer #footer-copyright-section #copyright-text {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-flex: wrap;
+  -webkit-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
 }
 
 #project-section .project-item {
