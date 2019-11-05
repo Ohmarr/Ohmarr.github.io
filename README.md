@@ -3,6 +3,12 @@
 
 <hr>
 
+<p align="center">
+  <img width=250 height=250 src="https://raw.githubusercontent.com/Ohmarr/Ohmarr.github.io/master/src/assets/Omar_Black_Logo_Square.png">
+</p>
+
+<hr>
+
 <h3 align=center> This repository contains all of the data needed for my personal website portfolio page.</h3>
 
 <h3 align=center>The website was built with Node.js, node package manager (npm), & the gulp (JavaScript toolkit) streaming build system.  </h3>
