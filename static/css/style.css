@@ -11410,6 +11410,7 @@ footer #footer-copyright-section #copyright-text {
 
 #project-section {
   margin: 0 0 0 0;
+  padding: 0 20% 0 20%;
 }
 
 #project-section a.external-link {
@@ -11635,39 +11636,44 @@ footer #footer-copyright-section #copyright-text {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     font-size: 1.0rem;
   }
-  #project-section .project-item {
+  #project-section #project-grid {
+    padding: 0;
+    margin: 0 !important;
+  }
+  #project-section #project-grid .project-item {
     max-width: 10rem;
     padding: 0 0 0.0rem 0;
   }
-  #project-section .project-item .project-item-content {
+  #project-section #project-grid .project-item .project-item-content {
     visibility: hidden;
   }
-  #project-section .project-item .project-item-title {
+  #project-section #project-grid .project-item .project-item-title {
     font-size: 1.0rem;
   }
-  #project-section .project-item .project-image {
+  #project-section #project-grid .project-item .project-image {
     max-width: 100%;
     padding: 0;
     margin: 0;
     height: 150px;
     width: 150px;
   }
-  #project-section .project-modal .proect-modal-body {
+  #project-section .project-modal .project-modal-body {
     font-size: 1.0rem;
   }
-  #project-section .project-modal .proect-modal-body .project-modal-title {
+  #project-section .project-modal .project-modal-body .project-modal-title {
     font-size: 1.0rem !important;
     text-transform: uppercase;
     color: black;
     margin: 0 0 0 0;
     padding: 5% 0 0 0 !important;
   }
-  #project-section .project-modal .proect-modal-body .project-modal-image {
-    max-width: 100%;
+  #project-section .project-modal .project-modal-body img.project-modal-image {
+    max-width: 150px;
+    height: auto;
     padding: 0;
     margin: 1% 0 1% 0 !important;
   }
-  #project-section .project-modal .proect-modal-body p {
+  #project-section .project-modal .project-modal-body p {
     font-size: 1.15rem;
     margin: 0 0 5% 0;
   }

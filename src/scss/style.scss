@@ -2,11 +2,9 @@
 @import 'bootstrap/scss/bootstrap.scss';
 // @import 'style.scss';
 @import 'navbar_and_footer.scss'; //Navbar / Logo / Menu
-
 .modal-content {
 	border: $tertiary 3px solid;
 }
-
 // large screens
 #profile-section {
 	align-content: center;
@@ -64,21 +62,20 @@
 		font-size: 1.25rem;
 		font-weight: 300;
 		font-family: $font-6;
-		text-align: justify; 
+		text-align: justify;
 		line-height: 1.5;
-		text-indent: 5.0rem; 
-
+		text-indent: 5.0rem;
 	}
 	#resume-section {
 		justify-content: center;
 		padding: 1% 0 1% 0;
 		#resume-button {
-			font-weight: bold; 
+			font-weight: bold;
 			font-size: 1.33rem;
 			padding: 1% 1% 1% 1%;
 			margin: 0;
 			border-radius: 0.5rem;
-			display: flex; 
+			display: flex;
 			#resume-pdf-icon {
 				margin: 0 0.5rem 0 0;
 			}
@@ -86,10 +83,9 @@
 	}
 }
 
-
 #project-section {
 	margin: 0 0 0 0; //-30px
-	// padding: 0 0 2% 0;
+	padding: 0 20% 0 20%;
 	a.external-link {
 		color: $tertiary;
 	}
@@ -271,6 +267,9 @@
 		}
 	}
 	#project-section {
+		#project-grid {
+			padding: 0;
+			margin: 0 !important;
 		.project-item {
 			max-width: 10rem;
 			padding: 0 0 0.0rem 0;
@@ -288,8 +287,9 @@
 				width: 150px;
 			}
 		}
+	}
 		.project-modal {
-			.proect-modal-body {
+			.project-modal-body {
 				font-size: 1.0rem;
 				.project-modal-title {
 					font-size: 1.0rem !important;
@@ -298,8 +298,9 @@
 					margin: 0 0 0 0;
 					padding: 5% 0 0 0 !important;
 				}
-				.project-modal-image {
-					max-width: 100%;
+				img.project-modal-image {
+					max-width: 150px;
+					height: auto;
 					padding: 0;
 					margin: 1% 0 1% 0 !important;
 				}
