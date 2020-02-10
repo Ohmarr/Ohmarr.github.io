@@ -14,7 +14,7 @@
 	#profile-picture {
 		border-radius: 100%;
 		// border: 0.05rem solid $tertiary;
-		width: 15rem;
+		width: 13rem;
 		margin: 0 0 2.0rem 0;
 		padding: 0 0 0 0;
 	}
@@ -64,7 +64,7 @@
 		font-family: $font-6;
 		text-align: justify;
 		line-height: 1.5;
-		text-indent: 5.0rem;
+		// text-indent: 5.0rem;
 	}
 	#resume-section {
 		justify-content: center;
@@ -100,21 +100,23 @@
 		display: block;
 		max-width: $project_item_width;
 		margin: auto auto auto auto;
-		padding: 1% 0 1% 0;
-		border-radius: $border-radius;
-		overflow: hidden;
+		padding: 1% 5% 1% 5%;
+		border-radius: 0.5rem;
+		// overflow: hidden;
 		align-content: center;
 		.project-item-content {
 			// text-align: center !important;
 			border: 0.20rem solid $tertiary;
+			border-radius: 0.5rem;
 			align-items: center;
 			justify-content: center;
-			height: 400px;
-			width: 400px;
+			height: 300px;
+			width: 300px;
 			display: flex;
 			position: absolute;
 			top: 0;
 			left: 0%;
+			bottom: 0%;
 			transition: $transition-base;
 			opacity: 0;
 			background-color: fade-out($primary, .1);
@@ -123,7 +125,7 @@
 			}
 			.project-item-content-info {
 				text-align: center;
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				// border: 0.20rem solid $tertiary;
 				// padding: 2.0rem;
 				p {
@@ -139,9 +141,9 @@
 		}
 		.project-image {
 			border-radius: 0.5rem;
-			max-width: 350px;
-			height: 350px;
-			margin: 0 0 0rem 0;
+			max-width: 250px;
+			height: 250px;
+			margin: 0 0 0 0;
 		}
 	}
 	.project-modal {
@@ -168,7 +170,7 @@
 			}
 			.project-modal-image {
 				border-radius: 0.5rem;
-				max-width: 450px;
+				max-width: 375px;
 				height: auto;
 				margin: 0 0 5% 0;
 			}
@@ -243,7 +245,7 @@
 		#profile-picture {
 			padding: 1% 0 6% 0;
 			margin: 0 0 0 0;
-			width: 15rem;
+			width: 10rem;
 		}
 		#profile-heading {
 			font-size: 2.0rem;
