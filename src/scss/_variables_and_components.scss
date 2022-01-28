@@ -37,6 +37,12 @@ $input-btn-border-width: 0.125rem;
 	}
 }
 
+// form { 
+// 	width: auto;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+
 body,
 html {
 	font-family: $font-1;
@@ -47,11 +53,12 @@ html {
 		color: $tertiary;
 	}
 }
+// *{box-sizing: border-box;}
 
 .page-section {
 	background-color: $primary;
 	color: $secondary;
-	padding: 2% 0 1% 0;
+	padding: 2%;
 	display: flex;
 	flex-direction: column;
 	.page-section-heading {
@@ -111,11 +118,11 @@ html {
 
 .btn {
 	text-align: center;
-	margin: 0.5rem 0.0rem 0.5rem 0.0rem;
+	margin: 0.5rem;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+	padding: 0.5rem;
 	font-size: 1.5rem;
 	color: $tertiary !important;
 	background-color: darken($primary, 10%) !important;

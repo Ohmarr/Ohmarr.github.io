@@ -25,7 +25,7 @@ html a:hover {
 .page-section {
   background-color: white;
   color: black;
-  padding: 2% 0 1% 0;
+  padding: 2%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -97,7 +97,7 @@ html a:hover {
 
 .btn {
   text-align: center;
-  margin: 0.5rem 0rem 0.5rem 0rem;
+  margin: 0.5rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -110,7 +110,7 @@ html a:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   color: #6d0707 !important;
   background-color: #e6e6e6 !important;
@@ -13151,7 +13151,7 @@ textarea.form-control-lg {
   margin: 0 0 0 0;
 }
 #OmarNav .navbar-nav li.nav-item a.nav-link {
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  padding: 1.25rem;
   font-size: 1.75rem;
   color: white;
   text-transform: uppercase;
@@ -13467,28 +13467,30 @@ footer #footer-copyright-section #copyright-text {
   height: auto;
   margin: 0 0 5% 0;
 }
+#project-section .project-modal .project-modal-body p {
+  font-size: 1.15rem;
+  margin: 0 0 5% 0;
+  color: blue;
+}
+
 #contact-section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  margin: auto;
 }
 #contact-section #contact-form {
   background-color: #f2f2f2;
   border: 0.15rem solid #6d0707;
   border-radius: 0.5rem;
-  margin: 1% auto 1% auto;
 }
 #contact-section #contact-form .contact-form-element {
   border-radius: 0.5rem;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-  padding: 0.25rem 0rem 0.25rem 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   border: 0.15rem solid #6d0707;
 }
 #contact-section #contact-form #contact-form-message {
   border-radius: 0.5rem;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-  padding: 1.5rem 0rem 1.5rem 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   border: 0.15rem solid #6d0707;
 }
 #contact-section #contact-form #contact-form-message #contact-send-button {
@@ -13501,8 +13503,8 @@ footer #footer-copyright-section #copyright-text {
   -ms-flex-align: center;
   align-items: center;
   background-color: #d9d9d9;
-  margin: 1rem 0 1rem 0;
-  padding: 0 0.25rem 0 0.25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 #thanks-section {
