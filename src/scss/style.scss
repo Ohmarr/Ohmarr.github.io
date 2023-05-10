@@ -2,9 +2,7 @@
 @import 'bootstrap/scss/bootstrap.scss';
 // @import 'style.scss';
 @import 'navbar_and_footer.scss'; //Navbar / Logo / Menu
-.modal-content {
-	border: $tertiary 3px solid;
-}
+
 // large screens
 #profile-section {
 	align-content: center;
@@ -38,14 +36,12 @@
 			display: flex;
 		}
 	}
-	.job-title-modal-title {
-		text-transform: uppercase;
-		// text-align: center;
-		margin: 0 -1.0rem 0 auto;
-	}
-	.job-title-modal-body {
-		text-align: left;
-	}
+	// .job-title-modal-title {
+	// 	text-transform: uppercase;
+	// }
+	// .job-title-modal-body {
+	// 	text-align: left;
+	// }
 }
 
 #about-section {
