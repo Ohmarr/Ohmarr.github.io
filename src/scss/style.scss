@@ -1,4 +1,5 @@
 @import 'variables_and_components.scss';
+@import 'certifications';
 @import 'bootstrap/scss/bootstrap.scss';
 // @import 'style.scss';
 @import 'navbar_and_footer.scss'; //Navbar / Logo / Menu
@@ -18,7 +19,7 @@
 		border-radius: 100%;
 		// border: 0.05rem solid $tertiary;
 		width: 17rem;
-		margin: 0 0 1.0rem 0;
+		margin: 0 0 0 0;
 		padding: 0 0 0 0;
 	}
 	#profile-heading {
@@ -26,17 +27,17 @@
 		font-size: 3.0rem;
 		text-transform: uppercase;
 		padding: 0 0 0 0;
-		margin: 0;
-		font-weight: 700;
+		margin: 1% 0 0 0;
+		font-weight: 800;
 	}
 	#job-title-section {
-		margin: 2% 0 0 0;
+		margin: 0 0 0 0;
 		justify-content: center;
 		.profile-job-button {
 			font-size: 1.33rem;
 			font-weight: 700;
-			padding: 1% 0.0 1% 0.0;
-			margin: 0 1% 0 1%;
+			padding: 0 00 0 00;
+			margin: 0 0 0 1%;
 			border-radius: 0.5rem;
 			display: flex;
 		}
@@ -51,13 +52,13 @@
 
 #about-section {
 	.row {
-		padding: 2% 0 0 0;
+		padding: 1% 0 0 0;
 	}
 	#about_column1 {
-		margin-left: auto;
+		margin: 0 0 0 auto;
 	}
 	#about_column2 {
-		margin-right: auto;
+		margin: 0 auto 0 0;
 	}
 	.about-p-text {
 		font-size: 1.25rem;
@@ -65,20 +66,14 @@
 		font-family: $font-6;
 		text-align: justify;
 		line-height: 1.5;
-		// text-indent: 5.0rem;
 	}
 	#resume-section {
 		justify-content: center;
-		padding: 1% 0 1% 0;
+		padding: 1% 0 0 0;
 		#resume-button {
-			font-weight: bold;
-			font-size: 1.33rem;
-			padding: 1% 1% 1% 1%;
-			margin: 0;
 			border-radius: 0.5rem;
-			display: flex;
 			#resume-pdf-icon {
-				margin: 0 0.5rem 0 0;
+				margin: 0 0.5rem 0 0.5rem; //right to separate w/ text
 			}
 		}
 	}
@@ -134,7 +129,7 @@
 		}
 	}
 	.modal {
-		padding: 0 !important;
+		padding: 0 0 0 0 !important;
 		button.close {
 			position: absolute;
 			z-index: 1;
@@ -230,21 +225,13 @@
 	#resume-section-thanks {
 		justify-content: center;
 		padding: 1.0rem 0 1.0rem 0;
-		#resume-button {
-			font-size: 1.15rem;
-			margin: 0 1% 0 1%;
-			border-radius: 0.5rem;
-			#resume-pdf-icon {
-				margin: 0 0.5rem 0 0;
-			}
-		}
 	}
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
 	#profile-section {
 		#profile-picture {
-			padding: 1% 0 6% 0;
+			padding: 1% 0 1% 0;
 			margin: 0 0 0 0;
 			width: 10rem;
 		}
@@ -263,19 +250,19 @@
 			padding: 1.0rem 0 1.0rem 0;
 			#resume-button {
 				border: 0.15rem solid $tertiary;
-				margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
 				font-size: 1.0rem;
 			}
 		}
 	}
 	#project-section {
 		#project-grid {
-			padding: 0;
-			margin: 0 !important;
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
 		.project-item {
 			max-width: 10rem;
-			padding: 0 0 0.0rem 0;
+			padding: 0 0 0 0;
 			.project-item-content {
 				visibility: hidden;
 			}
@@ -284,8 +271,8 @@
 			}
 			.project-image {
 				max-width: 100%;
-				padding: 0;
-				margin: 0;
+				padding: 0 0 0 0;
+				margin: 0 0 0 0;
 				height: 150px;
 				width: 150px;
 			}

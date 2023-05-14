@@ -23,10 +23,10 @@ html a:hover {
 }
 
 .page-section {
-  margin: auto;
+  margin: 0 0 0 0;
   background-color: white;
   color: black;
-  padding: 1% 0 1% 0;
+  padding: 0 0 0 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,7 +44,7 @@ html a:hover {
 }
 
 .divider-custom {
-  margin: 1% 0 0 0;
+  margin: 0.5% 0 0 0;
   width: 100%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -98,7 +98,7 @@ html a:hover {
 
 .btn {
   text-align: center;
-  margin: 0.5rem;
+  margin: 0 0.5% 0 0.5%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -111,7 +111,7 @@ html a:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0 0 0 0;
   font-size: 1.5rem;
   color: #6d0707 !important;
   background-color: #e6e6e6 !important;
@@ -137,11 +137,11 @@ html a:hover {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   html, body {
-    margin: 0;
+    margin: 0 0 0 0;
   }
 
   .page-section {
-    padding: 1% 0 1% 0;
+    padding: 0 0 0 0;
   }
   .page-section .page-section-heading {
     font-size: 1.5rem;
@@ -159,6 +159,68 @@ html a:hover {
     display: none;
   }
 }
+#certifications-section {
+  background-color: #f2f2f2;
+  padding: 1% 0 1% 0;
+}
+
+.container {
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.logos-container {
+  display: flexbox;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+.certifications-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.certification-link {
+  margin: 0 0 0 0;
+}
+
+.certification-logo {
+  width: 100px;
+  /* Adjust the width as needed */
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 10% 0 10%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.certification-logo:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13098,13 +13160,13 @@ textarea.form-control-lg {
   border-radius: 0.5rem;
 }
 #OmarNav .navbar-nav {
-  margin: 1rem 0 0 auto;
+  margin: 1% 0 0 auto;
 }
 #OmarNav .navbar-nav li.nav-item {
   margin: 0 0 0 0;
 }
 #OmarNav .navbar-nav li.nav-item a.nav-link {
-  padding: 1.25rem;
+  padding: 0 0 0 1.75rem;
   font-size: 1.75rem;
   color: white;
   text-transform: uppercase;
@@ -13133,7 +13195,7 @@ footer a:hover {
   text-decoration: none;
 }
 footer div {
-  padding: 1% 0rem 1% 0rem;
+  padding: 1% 0 1% 0;
 }
 footer h4, footer .h4 {
   text-transform: uppercase;
@@ -13206,18 +13268,18 @@ footer #footer-copyright-section #copyright-text {
   align-items: center;
 }
 .contact-section .form-group {
-  padding: 10px;
+  padding: 0 0 0 0;
   width: 100%;
   box-sizing: border-box;
 }
 .contact-section .contact-form-element,
 .contact-section #contact-send-button {
   width: 100%;
-  padding: 10px;
+  padding: 0 0 0 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin: 0 0 0 0;
 }
 .contact-section #contact-send-button {
   background-color: #4CAF50;
@@ -13280,7 +13342,7 @@ footer #footer-copyright-section #copyright-text {
 #profile-section #profile-picture {
   border-radius: 100%;
   width: 17rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 #profile-section #profile-heading {
@@ -13288,11 +13350,11 @@ footer #footer-copyright-section #copyright-text {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 0 0 0 0;
-  margin: 0;
-  font-weight: 700;
+  margin: 1% 0 0 0;
+  font-weight: 800;
 }
 #profile-section #job-title-section {
-  margin: 2% 0 0 0;
+  margin: 0 0 0 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -13301,8 +13363,8 @@ footer #footer-copyright-section #copyright-text {
 #profile-section #job-title-section .profile-job-button {
   font-size: 1.33rem;
   font-weight: 700;
-  padding: 1% 0 1% 0;
-  margin: 0 1% 0 1%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 1%;
   border-radius: 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13311,13 +13373,13 @@ footer #footer-copyright-section #copyright-text {
 }
 
 #about-section .row {
-  padding: 2% 0 0 0;
+  padding: 1% 0 0 0;
 }
 #about-section #about_column1 {
-  margin-left: auto;
+  margin: 0 0 0 auto;
 }
 #about-section #about_column2 {
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 #about-section .about-p-text {
   font-size: 1.25rem;
@@ -13331,21 +13393,13 @@ footer #footer-copyright-section #copyright-text {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 1% 0 1% 0;
+  padding: 1% 0 0 0;
 }
 #about-section #resume-section #resume-button {
-  font-weight: bold;
-  font-size: 1.33rem;
-  padding: 1% 1% 1% 1%;
-  margin: 0;
   border-radius: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 #about-section #resume-section #resume-button #resume-pdf-icon {
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 #project-section a.external-link {
@@ -13407,7 +13461,7 @@ footer #footer-copyright-section #copyright-text {
   height: var(--imageheight);
 }
 #project-section .modal {
-  padding: 0 !important;
+  padding: 0 0 0 0 !important;
 }
 #project-section .modal button.close {
   position: absolute;
@@ -13500,18 +13554,10 @@ footer #footer-copyright-section #copyright-text {
   justify-content: center;
   padding: 1rem 0 1rem 0;
 }
-#thanks-section #resume-section-thanks #resume-button {
-  font-size: 1.15rem;
-  margin: 0 1% 0 1%;
-  border-radius: 0.5rem;
-}
-#thanks-section #resume-section-thanks #resume-button #resume-pdf-icon {
-  margin: 0 0.5rem 0 0;
-}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   #profile-section #profile-picture {
-    padding: 1% 0 6% 0;
+    padding: 1% 0 1% 0;
     margin: 0 0 0 0;
     width: 10rem;
   }
@@ -13532,18 +13578,18 @@ footer #footer-copyright-section #copyright-text {
   }
   #about-section #resume-section #resume-button {
     border: 0.15rem solid #6d0707;
-    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     font-size: 1rem;
   }
 
   #project-section #project-grid {
-    padding: 0;
-    margin: 0 !important;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
   }
   #project-section #project-grid .project-item {
     max-width: 10rem;
-    padding: 0 0 0rem 0;
+    padding: 0 0 0 0;
   }
   #project-section #project-grid .project-item .project-item-content {
     visibility: hidden;
@@ -13553,8 +13599,8 @@ footer #footer-copyright-section #copyright-text {
   }
   #project-section #project-grid .project-item .project-image {
     max-width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     height: 150px;
     width: 150px;
   }
