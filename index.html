@@ -1,467 +1,91 @@
 <!DOCTYPE html>
-<html lang='en'>
-<!-- ––––––––––––––––––––––––––––––––––––– * HEADER * ––––––––––––––––––––––––––––––––––––– -->
-
+<html lang="en">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-	<meta name='description' content='Omar Abusheikh - Personal Website'>
-	<meta name='author' content='Omar Abusheikh'>
-	<meta name='keywords'
-		content='portfolio website machine learning deep learning data science neural networks datascience nlp ocr computer vision'>
-	<title>Omar - Portfolio</title>
-	<!-- ––––––––––––––––––––––––––––––––––––– Custom fonts for Omar theme -->
-	<link href='static/css/vendor/fontawesome-free/css/all.min.css' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
-		type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Raleway:300i|Roboto:400i&display=swap"
-		rel="stylesheet" type='text/css'>
-	<link rel='icon' type='image/png' sizes='36x36' href='favicon-36x36.png'>
-	<link rel='icon' type='image/png' sizes='48x48' href='favicon-48x48.png'>
-	<link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
-	<!-- ––––––––––––––––––––––––––––––––––––– Theme CSS -->
-	<link href='static/css/style.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<!-- Bootstrap core JavaScript -->
-	<!-- 
-	<script src='static/js/vendor/jquery/jquery.min.js'></script>
-	<script src='static/js/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
-	<script src='static/js/vendor/jquery-easing/jquery.easing.min.js'></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebDevGPT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<!-- ––––––––––––––––––––––––––––––––––––– * END HEADER * ––––––––––––––––––––––––––––––––––––– -->
-
-<body id='page-top'>
-	<!-- ––––––––––––––––––––––––––––––––––––– NAVBAR ––––––––––––––––––––––––––––––––––––– -->
-	<nav id='OmarNav' class='navbar navbar-expand-lg'>
-		<a class='navbar-brand js-scroll-trigger' href='#page-top'>
-			<img id='navbar-logo' class='grow' src='src/assets/oa-logo-reverse.png'
-				alt='Omar Abusheikh Logo'>
-		</a>
-		<!-- Accessible Rich Internet Applications (ARIA) intended to provide Accessiblility to disabled  -->
-		<button class='navbar-toggler navbar-toggler-right' data-target='#pageSections' type='button'
-			data-toggle='collapse' aria-controls='navbarResponsive' aria-expanded='false'
-			aria-label='Toggle navigation'>
-			<i class='fas fa-bars'>Menu</i>
-		</button>
-		<div id='pageSections' class='collapse navbar-collapse'>
-			<ul class='navbar-nav'>
-				<li class='nav-item'>
-					<a class='grow nav-link js-scroll-trigger' href='#profile-section'>Portfolio</a>
-				</li>
-				<li class='nav-item'>
-					<a class='grow nav-link js-scroll-trigger' href='#about-section'>About</a>
-				</li>
-				<li class='nav-item'>
-					<a class='grow nav-link js-scroll-trigger hide-when-small'
-						href='#contact-section'>Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END NAVBAR * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<div class="container">
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close"
-							data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Modal Header</h4>
-					</div>
-					<div class="modal-body">
-						<p>Some text in the modal.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default"
-							data-dismiss="modal">Close</button>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-	<section id='profile-section' class='page-section'>
-		<div class='container'>
-			<!--  Profile Pic Picture Image -->
-			<img id='profile-picture' src='src/assets/SmallFace.jpg' alt='Picture of Omar'>
-			<!--  Profile Pic Heading -->
-			<h1 id='profile-heading'>Omar Abusheikh</h1>
-			<!--  Icon Divider -->
-			<div class='divider-custom'>
-				<div class='divider-custom-line'></div>
-				<div class='divider-custom-icon'><i class='fas fa-asterisk'></i></div>
-				<div class='divider-custom-line'></div>
-			</div>
-			<h4>UNDER CONSTRUCTION</h4>
-			<!--  JOB TITLES & SKILLS -->
-			<div id='job-title-section' class='row'>
-				<button data-target='#machineLearning' type='button'
-					class='grow btn btn-info btn-lg col-sm-12 col-md-3' data-toggle='modal'>Data
-					Science<br>&<br>Machine Learning</button>
-				<div id='machineLearning' class='modal fade' role='dialog'>
-					<div class='modal-dialog'>
-
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 class='modal-title'>Data Science & Machine Learning
-								</h5>
-								<button type='button' class='close'
-									data-dismiss='modal'>&times;</button>
-							</div>
-							<div class='modal-body'>
-								<ul>
-									<li>Sci-Kit Learn</li>
-									<li>Tensorflow</li>
-									<li>keras</li>
-									<li>numPy</li>
-									<li>sciPy</li>
-									<li>pandas</li>
-									<li>FloydHub</li>
-									<li>Lingear Algebra</li>
-									<li>Probability</li>
-									<li>Python </li>
-									<li>R</li>
-									<li>Pandas</li>
-									<li>Heroku</li>
-									<li>SQL / MySQL / Oracle / Sqlite</li>
-									<li>NoSQL / MongoDB</li>
-									<li>ETL / CRUD</li>
-									<li>Data Collection / Wrangling / Web Scraping
-									</li>
-									<li>Version Control - github</li>
-									<li>Regular Expressions</li>
-									<li>Microsoft Excel / Visual Basic for
-										Applications (VBA)</li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default"
-									data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<button data-target='#developer' type='button'
-					class='grow btn profile-job-button col-sm-12 col-md-3'
-					data-toggle='modal'>Full-Stack Development</button>
-				<div id='developer' class='modal fade' tabindex='-1' role='dialog'
-					aria-labelledby='developerLabel' aria-hidden='true'>
-					<div class='modal-dialog' role='document'>
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 id='developerLabel' class='modal-title'>
-									Developer Skills</h5>
-								<button type='button' class='close' data-dismiss='modal'
-									aria-label='Close'>
-									<span aria-hidden='true'>&times;</span>
-								</button>
-							</div>
-							<div class='modal-body'>
-								<ul>
-									<li>Restful API</li>
-									<li>HyperText Markup Language (HTML)</li>
-									<li>JavaScript</li>
-									<li>Cascading Styling Sheets (CSS)</li>
-									<li>Node Package Manager (npm)</li>
-									<li>gulp</li>
-									<li>Version Control - github</li>
-									<li>Heroku App</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<button data-target='#dataScience' type='button'
-					class='grow btn profile-job-button col-sm-12 col-md-3'
-					data-toggle='modal'>Consulting<br>&<br>Research</button>
-				<div id='dataScience' class='modal fade' tabindex='-1' role='dialog'
-					aria-labelledby='dataScienceLabel' aria-hidden='true'>
-					<div class='modal-dialog' role='document'>
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 id='dataScienceLabel' class='modal-title'><a
-										style='color:black'
-										href='src/assets/Consulting-Brochure-V1.pdf'
-										target='_blank'>Consulting &
-										Research<br>(View Brochure)</a></h5>
-								<button type='button' class='grow close'
-									data-dismiss='modal' aria-label='Close'>
-									<span aria-hidden='true'>&times;</span>
-								</button>
-							</div>
-							<div class='modal-body'>
-								<ul>
-									<li>Emerging Technology Reporting & Analysis
-									</li>
-									<li>Bespoke Consulting & Education Services</li>
-									<li>Feasibility Studies</li>
-									<li>Strategic Analysis</li>
-									<li>Risk Analysis</li>
-									<li>Microeconomic Study</li>
-									<li>Macroeconomic Study</li>
-									<li>Custom Reporting</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * ABOUT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<section id='about-section' class='page-section'>
-		<div class='container'>
-			<!-- About Section Heading -->
-			<h2 class='page-section-heading'>About Me</h2>
-			<!-- Icon Divider -->
-			<div class='divider-custom'>
-				<div class='divider-custom-line'></div>
-				<div class='divider-custom-icon'><i class='fas fa-diagnoses'></i></div>
-				<div class='divider-custom-line'></div>
-			</div>
-			<!-- About Section Content -->
-			<div class='row'>
-				<div id='about_column1' class='col-lg-5'>
-					<p class='about-p-text'>
-						WRITE ABOUT YOURSELF HERE
-					</p>
-
-				</div>
-				<div id='about_column2' class='col-lg-5'>
-					<p class='about-p-text'>
-						Data Scientist ... Research Analyst & Consultant, with a focus and
-						passion for emerging
-						technologies with potential to cause market disruption.
-					</p>
-
-				</div>
-			</div>
-			<!-- About Section Button -->
-			<div id='resume-section' class='row col-12'>
-				<a id='resume-button' class='grow btn btn-sm col-3' href='src/assets/Resume_V1.pdf'
-					target='_blank'>
-					<i id='resume-pdf-icon' class='fas fa-file-pdf'></i> View Resume/CV
-				</a>
-			</div>
-		</div>
-	</section>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END ABOUT SETION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * PROJECT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- Project Section; Each Item has an associated Modal(pop-out), whose design is specified beneath each modal -->
-	<section id="project-section" class="page-section">
-		<div class="container">
-			<!-- Project Section Heading -->
-			<h2 class="page-section-heading text-center">Technical Projects</h2>
-			<div class="divider-custom d-flex justify-content-center align-items-center">
-				<!--  Icon Divider -->
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon"><i class="fas fa-code"></i></div>
-				<div class="divider-custom-line"></div>
-			</div>
-		</div>
-		<!-- START PROJECT GRID -->
-		<div id="project-grid" class="row justify-content-center align-items-center">
-			<div class="col-sm-12 col-lg-6 project-item grow mx-auto" data-toggle="modal"
-				data-target="#projectModal1">
-				<div>
-					<h5 class="project-item-title text-center">MNIST Digit Classifier</h5>
-					<img class="project-image" src="src/assets/digits.jpg" alt="Digits">
-				</div>
-				<!-- <div class="project-item-content">
-					<div class="project-item-content-info">
-						<p>Technologies:</p>
-						<ul>
-							<li>skill1</li>
-							<li>skill2</li>
-						</ul>
-					</div>
-				</div> -->
-			</div>
-			<div id="projectModal1" class="modal fade" tabindex="-1" role="dialog"
-				aria-labelledby="projectModal1Label" aria-hidden="true">
-				<div class="modal-dialog modal-xl" role="document">
-					<div class="modal-content">
-						<button type="button" class="close" data-dismiss="modal"
-							aria-label="Close">
-							<!--top right X (Close)-->
-							<span aria-hidden="true"><i class="fas fa-times"></i></span>
-						</button>
-						<div class="modal-body container col-lg-6 col-md-10">
-							<h2 class="modal-title">Integer Classifier</h2>
-							<!--Project Title-->
-							<div class="divider-custom">
-								<!--Icon Divider-->
-								<div class="divider-custom-line"></div>
-								<div class="divider-custom-icon"><i
-										class="fas fa-pen-nib"></i></div>
-								<div class="divider-custom-line"></div>
-							</div>
-							<img class="modal-image" src="src/assets/digits.jpg"
-								alt="What Number?">
-							<!--Project Image-->
-							<a href="https://digit-classifier-mnist.herokuapp.com/"
-								target="_blank">
-								<p>Deployed Application on Heroku</p>
-							</a>
-							<button class="btn btn-primary" href="#" data-dismiss="modal">
-								<!--close modal-->
-								<i class="fas fa-times fa-fw"></i>
-								Close Window
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-12 col-lg-6 project-item grow mb-5 mx-auto" data-toggle="modal"
-				data-target="#projectModal2">
-				<div>
-					<h5 class='project-item-title'>Earthquake Visualizer</h5>
-					<div class="image-container">
-						<img class='project-image' src='src/assets/earth.jpeg'
-							alt='Global Earthquake Project'>
-					</div>
-				</div>
-				<!-- <div class='project-item-content'>
-					<div class='project-item-content-info'>
-						<p>Technologies:</p>
-						<ul>
-							<li>thing1</li>
-							<li>thing2</li>
-						</ul>
-					</div>
-				</div> -->
-
-			</div>
-			<!-- </div> -->
-			<div id='projectModal2' class='modal fade' tabindex='-1' role='dialog'
-				aria-labelledby='projectModal2Label' aria-hidden='true'>
-				<div class='modal-dialog modal-xl' role='document'>
-					<div class='modal-content'>
-						<button type='button' class='close' data-dismiss='modal'
-							aria-label='Close'>
-							<!--Top right X (Close)-->
-							<span aria-hidden='true'><i class='fas fa-times'></i></span>
-						</button>
-						<div class='modal-body container col-6'>
-							<h2 class='modal-title'>Leaflet Application Geo-JSON
-							</h2>
-							<!--Project Title-->
-							<div class='divider-custom'>
-								<div class='divider-custom-line'></div>
-								<div class='divider-custom-icon'>
-									<i class='fas fa-asterisk'></i>
-								</div>
-								<div class='divider-custom-line'></div>
-							</div>
-							<!--Icon Divider-->
-							<div class="image-container">
-								<img class='modal-image img-responsive'
-									src='src/assets/USGS_Leaflet_Screenshot.png'
-									alt='Earthquakes Right Now!'>
-							</div>
-							<!--Project Image-->
-							<!--Project TEXT-->
-							<a class='external-link'
-								href='https://global-earthquakes.herokuapp.com/index.html'
-								target='_blank'>
-								<p>USGS Geological Survey Display of Earthquakes</p>
-							</a>
-							<button class='btn btn-primary' href='#' data-dismiss='modal'>
-								<i class='fas fa-times fa-fw'></i>
-								Close Window
-							</button>
-							<!--closemodal-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END PROJECT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- Contact Section -->
-	<section id='contact-section' class='page-section hide-when-small'>
-		<div class='container'>
-			<!-- Contact Section Heading -->
-			<h2 class='page-section-heading'>Contact Me</h2>
-			<!-- Icon Divider -->
-			<div class='divider-custom'>
-				<div class='divider-custom-line'></div>
-				<div class='divider-custom-icon'><i class='fas fa-paper-plane'></i></div>
-				<div class='divider-custom-line'></div>
-			</div>
-			<!-- Contact Section Form -->
-			<div id='contact-form' class='container'>
-				<form name='input' action='https://formspree.io/mqrbplpx' method='POST'>
-					<input class='contact-form-element col-12' type='text' name='Name'
-						placeholder='Your Name'>
-					<input class='contact-form-element col-12' type='email' name='_replyto'
-						placeholder='Your Email Address'>
-					<textarea id='contact-form-message' class='col-12' name='message'
-						placeholder='Type your Message'></textarea>
-					<input id='contact-send-button' class='btn grow col-12' type='Submit'
-						value='Send'>
-					<input type='hidden' name='_subject' value='Message from Ohmarr.github.io' />
-					<input type='hidden' name='_next' value='https://ohmarr.github.io/thanks' />
-				</form>
-			</div>
-		</div>
-	</section>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * FOOTER / COPYRIGHT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<footer>
-		<div class='container'>
-			<div class='row'>
-				<!-- Footer About Text -->
-				<div id='footer-contact-section' class='col-lg-4 col-12 grow'>
-					<h4 class='hide-when-small'>Direct Contact</h4>
-					<a class='grow lead'
-						href='mailto: oabusheikh@gmail.com'>oabusheikh@gmail.com</a><br>
-					<a class='grow lead' href='tel:+15129639461'>+1-512-963-9461</a>
-				</div>
-				<!-- Footer Social Icons -->
-				<div id='footer-links-section' class='col-lg-4 col-12 grow'>
-					<h4 class='hide-when-small'>Web</h4>
-					<a class='grow btn btn-social' href='https://www.linkedin.com/in/oabusheikh/'
-						target='_blank'><i class='grow fab fa-fw fa-linkedin'></i></a>
-					<a class='grow btn btn-social' href='https://github.com/Ohmarr'
-						target='_blank'><i class='grow fab fa-fw fa-github'></i></a>
-					<a class='grow btn btn-social' href='src/assets/Resume_V1.pdf'
-						target='_blank'><i class='grow fas fa-file-pdf'></i></a>
-				</div>
-				<!-- Footer Location -->
-				<div id='footer-location-section' class='col-lg-4 col-12'>
-					<h4 class='hide-when-small'>LOCATION</h4>
-					<p class='lead'>Austin, Texas 78741</p>
-				</div>
-				<div id='footer-copyright-section' class='container grow'>
-					<!-- Footer Location -->
-					<a id='copyright-text' href='http://Ohmarr.github.io'>
-						<small>Copyright &copy; Ohmarr.github.io 2022</small>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- 'Scroll to [Arrow] Top' Button (Only visible on small and extra-small screen sizes) -->
-	<div id='scroll-to-top' class='d-lg-none'>
-		<a id='scroll-to-top-button' class='js-scroll-trigger' href='#page-top'>
-			<i class='fa fa-chevron-up'></i>
-		</a>
-	</div>
-	<!-- ––––––––––––––––––––––––––––––––––––– * END FOOTER / COPYRIGHT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">WebDevGPT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-me">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <section id="about-me">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle">
+          <h1 class="text-center">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id bibendum tincidunt, arcu ipsum bibendum risus, vel venenatis velit turpis vel dolor. Sed ut enim euismod, facilisis massa in, tempus dolor. Donec vel lectus euismod, lacinia nibh et, posuere risus. Sed euismod, diam id bibendum tincidunt, arcu ipsum bibendum risus, vel venenatis velit turpis vel dolor. Sed ut enim euismod, facilisis massa in, tempus dolor. Donec vel lectus euismod, lacinia nibh et, posuere risus.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center">Projects</h1>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id bibendum tincidunt, arcu ipsum bibendum risus, vel venenatis velit turpis vel dolor. Sed ut enim euismod, facilisis massa in, tempus dolor. Donec vel lectus euismod, lacinia nibh et, posuere risus.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id bibendum tincidunt, arcu ipsum bibendum risus, vel venenatis velit turpis vel dolor. Sed ut enim euismod, facilisis massa in, tempus dolor. Donec vel lectus euismod, lacinia nibh et, posuere risus.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-me">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center">Contact Me</h1>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="bg-light text-center">
+    <p>&copy; 2023 WebDevGPT</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
