@@ -3,6 +3,11 @@
 // @import 'style.scss';
 @import 'navbar_and_footer.scss'; //Navbar / Logo / Menu
 
+:root{ //variables to use throughout; 
+	--imageheight: 475px;
+	--imagewidth: 475px;
+}
+
 // large screens
 #profile-section {
 	align-content: center;
@@ -80,8 +85,6 @@
 }
 
 #project-section {
-	margin: 0 0 0 0; //-30px
-	padding: 0 20% 0 20%;
 	a.external-link {
 		color: $tertiary;
 	}
@@ -93,26 +96,18 @@
 		text-align: center;
 		cursor: pointer;
 		position: relative;
-		display: block;
-		max-width: $project_item_width;
-		margin: auto 0 auto 0;
-		padding: 1% 5% 1% 5%;
 		border-radius: 0.5rem;
-		// overflow: hidden;
-		align-content: center;
 		.project-item-content {
-			// text-align: center !important;
 			border: 0.20rem solid $tertiary;
 			border-radius: 0.5rem;
-			align-items: center;
-			justify-content: center;
-			height: 300px;
-			width: 300px;
+			height: var(--imageheight);
+			width:var(--imagewidth);
 			display: flex;
 			position: absolute;
 			top: 0;
-			// left: 15px;
-			bottom: 0%;
+			bottom: 0;
+			left: 0;
+			right: 0;
 			transition: $transition-base;
 			opacity: 0;
 			background-color: fade-out($primary, .1);
@@ -122,10 +117,6 @@
 			.project-item-content-info {
 				text-align: center;
 				font-size: 1.25rem;
-				// align-content: center;
-				// justify-content: center;
-				// border: 0.20rem solid $tertiary;
-				// padding: 2.0rem;
 				p {
 					font-weight: 700;
 				}
@@ -138,15 +129,12 @@
 			text-transform: uppercase;
 		}
 		.project-image {
-			border-radius: 0.5rem;
-			max-width: 250px;
-			height: 250px;
-			margin: 0 0 0 0;
+			width: var(--imagewidth);
+			height: i;
 		}
 	}
-	.project-modal {
+	.modal {
 		padding: 0 !important;
-		margin: 0;
 		button.close {
 			position: absolute;
 			z-index: 1;
@@ -156,25 +144,40 @@
 			color: $tertiary;
 			opacity: 1;
 		}
-		.project-modal-body {
+		.modal-body {
 			text-align: center;
-			.project-modal-title {
+			.modal-title {
 				padding: 5% 0 0 0;
 				font-size: 2.0rem;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: black;
-				margin: 0 0 0 0;
 			}
-			.project-modal-image {
+			// .modal-content{
+			// 	margin:auto;
+			// }
+			// .modal-header{
+			// 	margin:auto;
+			// }
+			// .modal-footer{
+			// 	margin:auto;
+			// }
+			// .modal-xl{
+			// 	margin:auto;
+			// }
+			.modal-dialog{
+				margin: 20px auto;
+				width: 90%
+			}
+			.modal-image {
 				border-radius: 0.5rem;
 				max-width: 375px;
 				height: auto;
-				margin: 0 0 5% 0;
+				// margin: 0 0 5% 0;
 			}
 			p {
 				font-size: 1.15rem;
-				margin: 0 0 5% 0;
+				// margin: 0 0 5% 0;
 				color: blue;
 			}
 		}
@@ -291,27 +294,32 @@
 			}
 		}
 	}
-		.project-modal {
-			.project-modal-body {
-				font-size: 1.0rem;
-				.project-modal-title {
-					font-size: 1.0rem !important;
-					text-transform: uppercase;
-					color: black;
-					margin: 0 0 0 0;
-					padding: 5% 0 0 0 !important;
-				}
-				img.project-modal-image {
-					max-width: 150px;
-					height: auto;
-					padding: 0;
-					margin: 1% 0 1% 0 !important;
-				}
-				p {
-					font-size: 1.15rem;
-					margin: 0 0 5% 0;
-				}
+	.modal {
+		.modal-body {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    font-size: 1.0rem;
+		    .modal-title {
+			font-size: 1.0rem !important;
+			text-transform: uppercase;
+			color: black;
+			padding: 5% 0 0 0 !important;
+		    }
+		    .image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.modal-image {
+			    max-width: 250px;
 			}
+		    }
+		    p {
+			font-size: 1.15rem;
+		    }
 		}
+	    }
+	    
 	}
 }
