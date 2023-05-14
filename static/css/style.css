@@ -26,7 +26,7 @@ html a:hover {
   margin: auto;
   background-color: white;
   color: black;
-  padding: 2%;
+  padding: 1% 0 1% 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13074,31 +13074,21 @@ textarea.form-control-lg {
 }
 #OmarNav {
   background-color: black;
-  padding: 1% 0 1% 0;
+  padding: 0 0 1% 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+#OmarNav .logo-container {
+  --logo-size:100px;
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
 #OmarNav #navbar-logo {
-  width: 150px;
-  height: auto;
+  width: var(--logo-size);
+  height: var(--logo-size);
   color: white;
 }
 #OmarNav #navbar-logo.grow:hover {
-  -webkit-filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
-  filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
-}
-#OmarNav .container-fluid, #OmarNav .container-sm, #OmarNav .container-md, #OmarNav .container-lg, #OmarNav .container-xl, #OmarNav .container-xxl {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-#OmarNav .container-fluid #navbar-logo-thanks, #OmarNav .container-sm #navbar-logo-thanks, #OmarNav .container-md #navbar-logo-thanks, #OmarNav .container-lg #navbar-logo-thanks, #OmarNav .container-xl #navbar-logo-thanks, #OmarNav .container-xxl #navbar-logo-thanks {
-  width: 150px;
-  height: auto;
-  color: white;
-}
-#OmarNav .container-fluid #navbar-logo-thanks.grow:hover, #OmarNav .container-sm #navbar-logo-thanks.grow:hover, #OmarNav .container-md #navbar-logo-thanks.grow:hover, #OmarNav .container-lg #navbar-logo-thanks.grow:hover, #OmarNav .container-xl #navbar-logo-thanks.grow:hover, #OmarNav .container-xxl #navbar-logo-thanks.grow:hover {
   -webkit-filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
   filter: invert(87%) sepia(53%) saturate(4264%) hue-rotate(348deg) brightness(85%) contrast(107%);
 }
@@ -13200,6 +13190,47 @@ footer #footer-copyright-section #copyright-text {
   font-weight: 300;
 }
 
+.contact-section .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contact-section .form-group {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-section .contact-form-element,
+.contact-section #contact-send-button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.contact-section #contact-send-button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.contact-section #contact-send-button:hover {
+  background-color: #45a049;
+}
+.contact-section #contact-form-message {
+  height: 120px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
   #OmarNav {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -13248,8 +13279,8 @@ footer #footer-copyright-section #copyright-text {
 }
 #profile-section #profile-picture {
   border-radius: 100%;
-  width: 13rem;
-  margin: 0 0 2rem 0;
+  width: 17rem;
+  margin: 0 0 1rem 0;
   padding: 0 0 0 0;
 }
 #profile-section #profile-heading {
@@ -13373,7 +13404,7 @@ footer #footer-copyright-section #copyright-text {
 }
 #project-section .project-item .project-image {
   width: var(--imagewidth);
-  height: i;
+  height: var(--imageheight);
 }
 #project-section .modal {
   padding: 0 !important;
@@ -13412,26 +13443,28 @@ footer #footer-copyright-section #copyright-text {
 }
 
 #contact-section {
-  margin: auto;
+  margin: 0 0 0 0;
 }
 #contact-section #contact-form {
   background-color: #f2f2f2;
   border: 0.15rem solid #6d0707;
   border-radius: 0.5rem;
+  padding: 1% 1% 0 1%;
+  margin: 1% 0 0 0;
 }
-#contact-section #contact-form .contact-form-element {
+#contact-section .contact-form-element {
   border-radius: 0.5rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   border: 0.15rem solid #6d0707;
 }
-#contact-section #contact-form #contact-form-message {
+#contact-section #contact-form-message {
   border-radius: 0.5rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   border: 0.15rem solid #6d0707;
 }
-#contact-section #contact-form #contact-form-message #contact-send-button {
+#contact-section #contact-form-message #contact-send-button {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -13441,8 +13474,7 @@ footer #footer-copyright-section #copyright-text {
   -ms-flex-align: center;
   align-items: center;
   background-color: #d9d9d9;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0 0 0 0;
 }
 
 #thanks-section {

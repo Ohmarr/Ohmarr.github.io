@@ -3,3 +3,6 @@ node_modules
 
 #ignore personal file
 Instructions.txt
+
+#old resumes etc
+src/assets/OldShit

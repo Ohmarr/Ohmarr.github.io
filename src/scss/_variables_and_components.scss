@@ -59,7 +59,7 @@ html {
 	margin:auto;
 	background-color: $primary;
 	color: $secondary;
-	padding: 2%;
+	padding: 1% 0 1% 0 ; //trbl - top/right/bottom/left
 	display: flex;
 	flex-direction: column;
 	.page-section-heading {
