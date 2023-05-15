@@ -142,7 +142,7 @@ body {
   }
 
   .btn {
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
   }
 
   .page-section {
@@ -195,9 +195,13 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  /*in small screens center*/
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -205,11 +209,15 @@ body {
 }
 
 .certification-link {
-  margin: 0 0 0 0;
+  margin: 10px;
+  -webkit-flex-basis: 33%;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  max-width: 150px;
 }
 
 .certification-logo {
-  width: 100px;
+  width: 100%;
   /* Adjust the width as needed */
   height: auto;
   margin: 0 0 0 0;
@@ -226,6 +234,14 @@ body {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .certifications-row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13389,12 +13405,30 @@ footer #footer-copyright-section #copyright-text {
 #about-section #about_column2 {
   margin: 0 auto 0 0;
 }
+#about-section .about-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+  -webkit-justify-content: column;
+  -ms-flex-pack: column;
+  justify-content: column;
+}
+#about-section .about-column {
+  -webkit-flex-basis: 45%;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+  word-spacing: normal;
+  width: 100%;
+}
 #about-section .about-p-text {
   font-size: 1.25rem;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   text-align: justify;
   line-height: 1.5;
+  padding: 10px 20px 10px 20px;
 }
 #about-section #resume-section {
   -webkit-box-pack: center;
@@ -13596,6 +13630,31 @@ footer #footer-copyright-section #copyright-text {
     padding: 0 0 0 0;
     font-size: 1rem;
   }
+  #about-section .about-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 60vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-section .about-column {
+    margin-bottom: 20px;
+    word-spacing: normal;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    width: 100%;
+  }
 
   #project-section #project-grid {
     padding: 0 0 0 0;
@@ -13663,5 +13722,39 @@ footer #footer-copyright-section #copyright-text {
   }
   #project-section .modal .modal-body p {
     font-size: 1.15rem;
+  }
+
+  #job-title-section {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #job-title-section .profile-job-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 1%;
+    border-radius: 0.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .btn.btn-lg, .btn-group-lg > .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  .row#job-title-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
