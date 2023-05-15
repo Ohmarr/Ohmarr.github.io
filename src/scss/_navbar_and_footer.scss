@@ -14,6 +14,7 @@
 	#navbar-logo {
 		width: var(--logo-size);
 		// max-width: 100%;
+		margin: 0 0 0 0;
 		height: var(--logo-size);
 		// max-height: 100%;
 		color: $primary;
@@ -40,6 +41,7 @@
 
 	.navbar-toggler {
 		font-size: 1.25rem;
+		// padding: 3% 3% 3% 3%;
 		background-color: white;
 		border-radius: 0.5rem;
 	}
@@ -208,17 +210,12 @@ footer {
 		}
 
 		.navbar-nav {
-			margin: 0 0 0 0;
-
-			li.nav-item {
-				a.nav-link {
-					// color: $primary;
-					// background: $secondary;
-					font-size: 1.0rem;
-					text-align: center;
-					// background: lighten($secondary, 30%);
-				}
-			}
+			display: none;
+		}
+		.navbar-brand{
+			// display: flex;
+			justify-content: center;
+			// width: 100%;
 		}
 	}
 

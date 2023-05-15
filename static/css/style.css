@@ -13152,6 +13152,7 @@ textarea.form-control-lg {
 }
 #OmarNav #navbar-logo {
   width: var(--logo-size);
+  margin: 0 0 0 0;
   height: var(--logo-size);
   color: white;
 }
@@ -13315,11 +13316,13 @@ footer #footer-copyright-section #copyright-text {
     height: auto;
   }
   #OmarNav .navbar-nav {
-    margin: 0 0 0 0;
+    display: none;
   }
-  #OmarNav .navbar-nav li.nav-item a.nav-link {
-    font-size: 1rem;
-    text-align: center;
+  #OmarNav .navbar-brand {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   #footer .btn-social {
