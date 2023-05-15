@@ -136,8 +136,13 @@ html a:hover {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  html, body {
-    margin: 0 0 0 0;
+  html,
+body {
+    margin: 1px;
+  }
+
+  .btn {
+    margin: 0 0 20px 0;
   }
 
   .page-section {
@@ -13476,11 +13481,17 @@ footer #footer-copyright-section #copyright-text {
   text-align: center;
 }
 #project-section .modal .modal-body .modal-title {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 5% 0 0 0;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: black;
+}
+#project-section .modal .modal-body .modal-content {
+  margin: 0 0 0 0;
 }
 #project-section .modal .modal-body .modal-dialog {
   margin: 20px auto;
@@ -13492,8 +13503,8 @@ footer #footer-copyright-section #copyright-text {
   height: auto;
 }
 #project-section .modal .modal-body p {
-  font-size: 1.15rem;
-  color: blue;
+  font-size: 2.15rem;
+  color: #ff002b;
 }
 
 #contact-section {
