@@ -1,7 +1,7 @@
 //large screens (default)
-#OmarNav {
-	background-color: $secondary;
-	padding: 0 0 1% 0;
+.navbar {
+	background-color: $brand-0;
+	padding: 3%;
 	font-family: $font-1;
 	font-weight: 700;
 
@@ -60,7 +60,7 @@
 				border-radius: 0.5rem;
 
 				&:hover {
-					color: $tertiary;
+					color: darken($brand-0, 5%);
 				}
 			}
 		}
@@ -70,7 +70,7 @@
 footer {
 	flex-shrink: 0;
 	padding: 0 0 1% 0;
-	background-color: $secondary;
+	background-color: $brand-0;
 	color: $primary;
 	place-content: center;
 	text-align: center;
@@ -79,7 +79,7 @@ footer {
 		color: $primary;
 
 		&:hover {
-			color: $tertiary;
+			color: darken($brand-0, 5%);
 			font-weight: bolder;
 			text-decoration: none;
 		}
@@ -115,7 +115,7 @@ footer {
 			&.grow:hover {
 				background-color: darken($primary, 20%);
 				border-color: darken($tertiary, 5%);
-				color: darken($tertiary, 5%);
+				// color: darken($brand-0, 10%);
 				font-weight: bold;
 			}
 		}
@@ -137,7 +137,7 @@ footer {
 	}
 
 	#footer-copyright-section {
-		background-color: $secondary;
+		background-color: $primary;
 		color: $tertiary;
 		padding: 1% 0 1% 0;
 		text-align: center;
@@ -146,57 +146,19 @@ footer {
 		#copyright-text {
 			color: $tertiary;
 			font-size: 1.25rem;
-			font-weight: 300;
+			font-weight: bold;
 		}
-	}
-}
-
-.contact-section {
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-	}
-
-	.form-group {
-		padding: 0 0 0 0;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.contact-form-element,
-	#contact-send-button {
-		width: 100%;
-		padding: 0 0 0 0;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-		margin: 0 0 0 0;
-	}
-
-	#contact-send-button {
-		background-color: #4CAF50;
-		color: white;
-		cursor: pointer;
-	}
-
-	#contact-send-button:hover {
-		background-color: #45a049;
-	}
-
-	#contact-form-message {
-		height: 120px;
 	}
 }
 
 //Small screens
 @media screen and (min-width: 0px) and (max-width: 768px) {
-	#OmarNav {
-		transition: padding-top 0.3s, padding-bottom 0.3s;
+
+	
 
 		.navbar {
-			background-color: $tertiary;
+			transition: padding-top 0.3s, padding-bottom 0.3s;
+			background-color: $brand-0;
 			text-transform: uppercase;
 		}
 
@@ -217,7 +179,7 @@ footer {
 			justify-content: center;
 			// width: 100%;
 		}
-	}
+	
 
 	#footer {
 		.btn-social {
@@ -228,3 +190,6 @@ footer {
 	}
 
 }
+
+
+

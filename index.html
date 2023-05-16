@@ -24,10 +24,9 @@
 	<link href='static/css/style.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<!-- Bootstrap core JavaScript -->
-	<!-- 
 	<script src='static/js/vendor/jquery/jquery.min.js'></script>
 	<script src='static/js/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
-	<script src='static/js/vendor/jquery-easing/jquery.easing.min.js'></script> -->
+	<script src='static/js/vendor/jquery-easing/jquery.easing.min.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -35,18 +34,18 @@
 
 <body id='page-top'>
 	<!-- ––––––––––––––––––––––––––––––––––––– NAVBAR ––––––––––––––––––––––––––––––––––––– -->
-	<nav id="OmarNav" class="navbar navbar-expand-lg">
-		<div class="logo-container">
+	<nav class="navbar navbar-expand-lg">
+		<!-- <div class="logo-container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">
-				<!-- <img id="navbar-logo" class="grow" src="src/assets/oa-logo-reverseSquare.png" alt="Omar Abusheikh Logo"> -->
+				<img id="navbar-logo" class="grow" src="src/assets/oa-logo-reverseSquare.png" alt="Omar Abusheikh Logo">
 			</a>
-		</div>
-		<button class="navbar-nav navbar-toggler navbar-toggler-right" data-target="#pageSections" type="button"
+		</div> -->
+		<!-- <button class="navbar-nav navbar-toggler navbar-toggler-right" data-target="#pageSections" type="button"
 			data-toggle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
 			aria-label="Toggle navigation">
 			<i class="fas fa-bars">Menu</i>
-		</button>
-		<div id="pageSections" class="collapse navbar-collapse">
+		</button> -->
+		<!-- <div id="pageSections" class="collapse navbar-collapse">
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="grow nav-link js-scroll-trigger" href="#profile-section">Portfolio</a>
@@ -58,12 +57,10 @@
 					<a class="grow nav-link js-scroll-trigger hide-when-small" href="#contact-section">Contact</a>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 	</nav>
-
 	<!-- ––––––––––––––––––––––––––––––––––––– * END NAVBAR * ––––––––––––––––––––––––––––––––––––– -->
 	<!-- ––––––––––––––––––––––––––––––––––––– * PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
-
 	<section id='profile-section' class='page-section'>
 		<div class='container'>
 			<!--  Profile Pic Picture Image -->
@@ -80,26 +77,21 @@
 			<div id='job-title-section' class='row'>
 				<button data-target='#machineLearning' type='button' class='grow btn btn-info btn-lg col-sm-12 col-md-3'
 					data-toggle='modal'>Data Science<br>&<br>Machine Learning</button>
-				<div id='machineLearning' class='modal fade' role='dialog'>
-					<div class='modal-dialog'>
-
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 class='modal-title'>Data Science & Machine Learning
-								</h5>
-								<button type='button' class='close' data-dismiss='modal'>&times;</button>
-							</div>
-							<div class='modal-body'>
-								<p>
-									With expertise in data science and machine learning, I possess a strong foundation
-									in Python, R, SQL, and machine learning frameworks such as Sci-Kit Learn,
-									TensorFlow, and Keras. Proficient in data collection, wrangling, and web scraping, I
-									leverage these skills to gather and prepare data for analysis. My proficiency in
-									database management includes SQL, MySQL, Oracle, SQLite, and NoSQL databases like
-									MongoDB. With a deep understanding of linear algebra and probability, I can
-									implement advanced algorithms and models to derive valuable insights.
-								</p>
-								Key Skills:
+				<div id='machineLearning' class='modal fade modal-dialog-centered' role='dialog'>
+					<div class='modal-content' role="document">
+						<div class='modal-header'>
+							<h5 class='modal-title'>Data Science & Machine Learning</h5>
+						</div>
+						<div class='modal-body'>
+							<p> With expertise in data science and machine learning, I possess a strong foundation in
+								Python, R, SQL, and machine learning frameworks such as Sci-Kit Learn, TensorFlow, and
+								Keras. Proficient in data collection, wrangling, and web scraping, I leverage these
+								skills to gather and prepare data for analysis. My proficiency in database management
+								includes SQL, MySQL, Oracle, SQLite, and NoSQL databases like MongoDB. With a deep
+								understanding of linear algebra and probability, I can implement advanced algorithms and
+								models to derive valuable insights. </p>
+							<div class="modal-skills">
+								<h3>Key Skills:</h3>
 								<ul>
 									<li>Python </li>
 									<li>R</li>
@@ -113,33 +105,30 @@
 									<li>Database Management</li>
 								</ul>
 							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="grow close btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-				<button data-target='#developer' type='button' class='grow btn btn-info btn-lg col-sm-12 col-md-3'
+				<button data-target='#research' type='button' class='grow btn btn-info btn-lg col-sm-12 col-md-3'
 					data-toggle='modal'>Research<br>&<br>Analysis</button>
-				<div id='developer' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='developerLabel'
-					aria-hidden='true'>
-					<div class='modal-dialog' role='document'>
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 id='developerLabel' class='modal-title'>Research & Analysis</h5>
-								<button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-									<span aria-hidden='true'>&times;</span>
-								</button>
-							</div>
-							<div class='modal-body'>
-								<p>Equipped with strong research and analytical skills, I excel in conducting
-									comprehensive analyses and providing valuable insights. Proficient in tools such as
-									Python, R, and SQL, I leverage these skills to gather and evaluate data, conduct
-									statistical analysis, and generate meaningful reports. With experience in
-									macroeconomic and microeconomic analysis, market research, and auditing, I deliver
-									informed recommendations and support strategic decision-making. My expertise in data
-									visualization using Tableau and Python allows me to communicate complex information
-									effectively.</p>
+				<div id='research' class='modal fade modal-dialog-centered' tabindex='-1' role='dialog'
+					aria-labelledby='developerLabel' aria-hidden='true'>
+					<div class='modal-content' role="document">
+						<div class='modal-header'>
+							<h5 class='modal-title'>Research & Analysis</h5>
+						</div>
+						<div class='modal-body'>
+							<p>Equipped with strong research and analytical skills, I excel in conducting comprehensive
+								analyses and providing valuable insights. Proficient in tools such as Python, R, and
+								SQL, I leverage these skills to gather and evaluate data, conduct statistical analysis,
+								and generate meaningful reports. With experience in macroeconomic and microeconomic
+								analysis, market research, and auditing, I deliver informed recommendations and support
+								strategic decision-making. My expertise in data visualization using Tableau and Python
+								allows me to communicate complex information effectively.</p>
+							<div class="modal-skills">
+								<h3>Key Skills:</h3>
 								<ul>
 									<li>Python</li>
 									<li>R</li>
@@ -154,31 +143,33 @@
 								</ul>
 							</div>
 						</div>
+						<div class="modal-footer">
+							<button type="button" class="grow close btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
-				<button data-target='#dataScience' type='button' class='grow btn btn-info btn-lg col-sm-12 col-md-3'
+				<button data-target='#consulting' type='button' class='grow btn btn-info btn-lg col-sm-12 col-md-3'
 					data-toggle='modal'>Consulting<br>&<br>Reporting</button>
-				<div id='dataScience' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='dataScienceLabel'
-					aria-hidden='true'>
-					<div class='modal-dialog' role='document'>
-						<div class='modal-content'>
-							<div class='modal-header'>
-								<h5 id='dataScienceLabel' class='modal-title'>
-									<a style='color:black' href='src/assets/Consulting-Brochure-V1.pdf' target='_blank'>Consulting & Reporting</a></h5>
-								<button type='button' class='grow close' data-dismiss='modal' aria-label='Close'>
-									<span aria-hidden='true'>&times;</span>
-								</button>
-							</div>
-							<div class='modal-body'>
-								<p>With a background in consulting and strategic reporting, I specialize in providing
-									actionable recommendations and communicating complex information in a clear and
-									concise manner. Leveraging tools such as Tableau and Python, I create compelling
-									reports and visualizations to effectively communicate insights to stakeholders.
-									Experienced in conducting macroeconomic and microeconomic analysis, market research,
-									and auditing, I deliver valuable insights that inform strategic decision-making.
-									Additionally, I possess the ability to assess disruptive technologies, evaluate
-									business performance, and translate technical complexities into concise and
-									compelling reports.</p>
+				<div id='consulting' class='modal fade modal-dialog-centered' tabindex='-1' role='dialog'
+					aria-labelledby='dataScienceLabel' aria-hidden='true'>
+					<div class='modal-content' role='document'>
+						<div class='modal-header'>
+							<h5 class='modal-title'>
+								<a style='color:black' href='src/assets/Consulting-Brochure-V1.pdf'
+									target='_blank'>Consulting & Reporting</a>
+							</h5>
+						</div>
+						<div class='modal-body'>
+							<p>With a background in consulting and strategic reporting, I specialize in providing
+								actionable recommendations and communicating complex information in a clear and concise
+								manner. Leveraging tools such as Tableau and Python, I create compelling reports and
+								visualizations to effectively communicate insights to stakeholders. Experienced in
+								conducting macroeconomic and microeconomic analysis, market research, and auditing, I
+								deliver valuable insights that inform strategic decision-making. Additionally, I possess
+								the ability to assess disruptive technologies, evaluate business performance, and
+								translate technical complexities into concise and compelling reports.</p>
+							<div class="modal-skills">
+								<h3>Key Skills:</h3>
 								<ul>
 									<li>Tableau</li>
 									<li>Consulting</li>
@@ -190,6 +181,9 @@
 								</ul>
 							</div>
 						</div>
+						<div class="modal-footer">
+							<button type="button" class="grow close btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -197,7 +191,7 @@
 	</section>
 	<!-- ––––––––––––––––––––––––––––––––––––– * END PROFILE PIC SECTION * ––––––––––––––––––––––––––––––––––––– -->
 	<!-- ––––––––––––––––––––––––––––––––––––– * ABOUT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<section id='about-section' class='page-section'>
+	<section id='about-section' class='page-section col-12'>
 		<div class='container'>
 			<!-- About Section Heading -->
 			<h2 class='page-section-heading'>About Me</h2>
@@ -209,145 +203,43 @@
 			</div>
 			<!-- About Section Content -->
 			<div class='about-content'>
-				<div id='about_column1' class='about-column'>
-					<p class='about-p-text'>
-						I am an experienced and results-driven Data Scientist with a strong background in mathematics
-						and a passion for statistics. With 6+ years of expertise in Python, R, SQL, and machine
-						learning, I possess a diverse skill set in data science. I specialize in creating compelling
-						data visualizations using Tableau and Python to effectively communicate complex information.
-						Throughout my career, I have successfully provided valuable, data-driven insights to support
-						strategic decision-making across various industries. From conducting macroeconomic and
-						microeconomic analysis to auditing and market analysis, I have contributed to informed
-						investment decisions and optimized business strategies.
-					</p>
-
+				<div class='about-column'>
+					<p class='about-p-text'> I am an experienced and results-driven Data Scientist with a strong
+						background in mathematics and a passion for statistics. With 6+ years of expertise in Python, R,
+						SQL, and machine learning, I possess a diverse skill set in data science. I specialize in
+						creating compelling data visualizations using Tableau and Python to effectively communicate
+						complex information. Throughout my career, I have successfully provided valuable, data-driven
+						insights to support strategic decision-making across various industries. From conducting
+						macroeconomic and microeconomic analysis to auditing and market analysis, I have contributed to
+						informed investment decisions and optimized business strategies. </p>
 				</div>
-				<div id='about_column2' class='about-column'>
-					<p class='about-p-text'>
-						I am dedicated to upholding high standards of accuracy and quality in my work, ensuring
-						organizations can leverage data for business success. My experience extends beyond data
-						analysis, encompassing areas such as consulting, research, reporting, and strategic thinking. By
-						continuously expanding my knowledge and staying abreast of emerging technologies, I am able to
-						assess disruptive trends and translate technical complexities into concise and compelling
-						reports. Whether it's harnessing the power of data to drive innovation or leveraging insights to
-						inform strategic planning, I am passionate about unlocking the potential of data and driving
-						meaningful outcomes for businesses.
-					</p>
-
+				<div class='about-column'>
+					<p class='about-p-text'> I am dedicated to upholding high standards of accuracy and quality in my
+						work, ensuring organizations can leverage data for business success. My experience extends
+						beyond data analysis, encompassing areas such as consulting, research, reporting, and strategic
+						thinking. By continuously expanding my knowledge and staying abreast of emerging technologies, I
+						am able to assess disruptive trends and translate technical complexities into concise and
+						compelling reports. Whether it's harnessing the power of data to drive innovation or leveraging
+						insights to inform strategic planning, I am passionate about unlocking the potential of data and
+						driving meaningful outcomes for businesses. </p>
 				</div>
 			</div>
 			<!-- About Section Button -->
-			<div id='resume-section' class='row col-13'>
-				<a id='resume-button' class='grow btn btn-info col-md-3' href='src/assets/Omar-Resume.pdf'
-					target='_blank'>
-					<i id='resume-pdf-icon' class='fas fa-file-pdf'></i> Download Resume
-				</a>
+			<div id='resume-section' class="row">
+				<div class='col-md-3'>
+					<a id='resume-button' class='grow btn btn-info' href='src/assets/Omar-Resume.pdf' target='_blank'>
+						<i id='resume-pdf-icon' class='fas fa-file-pdf' aria-hidden="true"></i>
+						<button type='button' class="btn-link">Download Resume</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- ––––––––––––––––––––––––––––––––––––– * END ABOUT SETION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- ––––––––––––––––––––––––––––––––––––– * PROJECT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-	<!-- Project Section; Each Item has an associated Modal(pop-out), whose design is specified beneath each modal -->
-	<!-- PROJECT SECTION BELOW HAS BEEN COMMENTED OUT UNTIL NEWER PROJECTS ARE ADDED -->
-
-	<!-- <section id="project-section" class="page-section">
-		<div class="container">
-			<h2 class="page-section-heading text-center">Technical Projects</h2>
-			<div class="divider-custom d-flex justify-content-center align-items-center">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon"><i class="fas fa-code"></i></div>
-				<div class="divider-custom-line"></div>
-			</div>
-		</div>
-		<div id="project-grid" class="row justify-content-center align-items-center">
-			<div class="col-sm-12 col-lg-6 project-item grow mx-auto" data-toggle="modal"
-				data-target="#projectModal1">
-				<div>
-					<h5 class="project-item-title text-center">MNIST Digit Classifier</h5>
-					<img class="project-image" src="src/assets/digits.jpg" alt="Digits">
-				</div>
-			</div>
-			<div id="projectModal1" class="modal fade" tabindex="-1" role="dialog"
-				aria-labelledby="projectModal1Label" aria-hidden="true">
-				<div class="modal-dialog modal-xl" role="document">
-					<div class="modal-content">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true"><i class="fas fa-times"></i></span>
-						</button>
-						<div class="modal-body container col-lg-6 col-md-10">
-							<h2 class="modal-title">Integer Classifier</h2>
-							<div class="divider-custom">
-								<div class="divider-custom-line"></div>
-								<div class="divider-custom-icon"><i class="fas fa-pen-nib"></i>
-								</div>
-								<div class="divider-custom-line"></div>
-							</div>
-							<img class="modal-image" src="src/assets/digits.jpg" alt="What Number?">
-							<a href="https://digit-classifier-mnist.herokuapp.com/" target="_blank">
-								<p>Deployed Application on Heroku</p>
-							</a>
-							<button class="btn btn-primary" href="#" data-dismiss="modal">
-								<i class="fas fa-times fa-fw"></i>
-								Close Window
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-lg-6 project-item grow mb-5 mx-auto" data-toggle="modal"
-				data-target="#projectModal2">
-				<div>
-					<h5 class='project-item-title'>Earthquake Visualizer</h5>
-					<div class="image-container">
-						<img class='project-image' src='src/assets/earth.jpeg'
-							alt='Global Earthquake Project'>
-					</div>
-				</div>
-			</div>
-			<div id='projectModal2' class='modal fade' tabindex='-1' role='dialog'
-				aria-labelledby='projectModal2Label' aria-hidden='true'>
-				<div class='modal-dialog modal-xl' role='document'>
-					<div class='modal-content'>
-						<button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-							<span aria-hidden='true'><i class='fas fa-times'></i></span>
-						</button>
-						<div class='modal-body container col-6'>
-							<h2 class='modal-title'>Leaflet Application Geo-JSON
-							</h2>
-							<div class='divider-custom'>
-								<div class='divider-custom-line'></div>
-								<div class='divider-custom-icon'>
-									<i class='fas fa-asterisk'></i>
-								</div>
-								<div class='divider-custom-line'></div>
-							</div>
-							<div class="image-container">
-								<img class='modal-image img-responsive'
-									src='src/assets/USGS_Leaflet_Screenshot.png'
-									alt='Earthquakes Right Now!'>
-							</div>
-							<a class='external-link'
-								href='https://global-earthquakes.herokuapp.com/index.html'
-								target='_blank'>
-								<p>USGS Geological Survey Display of Earthquakes</p>
-							</a>
-							<button class='btn btn-primary' href='#' data-dismiss='modal'>
-								<i class='fas fa-times fa-fw'></i>
-								Close Window
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section> -->
-
-
-	<!-- ––––––––––––––––––––––––––––––––––––– * END PROJECT SECTION * ––––––––––––––––––––––––––––––––––––– -->
+	<!-- ––––––––––––––––––––––––––––––––––––– * PROJECT SECTION COMPLETELY REMOVED * ––––––––––––––––––––––––––––––––––––– -->
 	<!-- ––––––––––––––––––––––––––––––––––––– * CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
 	<!-- Contact Section -->
-	<section id='contact-section' class='page-section hide-when-small'>
+	<section id='contact-section' class='page-section'>
 		<div class='container'>
 			<!-- Contact Section Heading -->
 			<h2 class='page-section-heading'>Contact Me</h2>
@@ -372,13 +264,12 @@
 							placeholder="Type your Message"></textarea>
 					</div>
 					<div class="form-group">
-						<input id="contact-send-button" class="btn grow col-12" type="Submit" value="Send">
+						<input id="contact-send-button" class="btn grow" type="Submit" value="Send">
 					</div>
 					<input type="hidden" name="_subject" value="Message from Ohmarr.github.io" />
 					<input type="hidden" name="_next" value="https://ohmarr.github.io/thanks" />
 				</form>
 			</div>
-
 		</div>
 	</section>
 	<!-- ––––––––––––––––––––––––––––––––––––– * END CONTACT ME SECTION * ––––––––––––––––––––––––––––––––––––– -->
@@ -388,7 +279,8 @@
 			<div class="certifications-row">
 				<a href='src/assets/Wharton_Certification.png' class="certification-link" target="_blank"
 					rel="noopener noreferrer">
-					<img src='src/assets/icons/wharton-logo.svg' alt="Wharton Certificate" class="certification-logo grow">
+					<img src='src/assets/icons/wharton-logo.svg' alt="Wharton Certificate"
+						class="certification-logo grow">
 				</a>
 				<a href='src/assets/TableauCert.png' class="certification-link" target="_blank"
 					rel="noopener noreferrer">
@@ -440,7 +332,7 @@
 				<div id='footer-copyright-section' class='container grow'>
 					<!-- Footer Location -->
 					<a id='copyright-text' href='http://Ohmarr.github.io'>
-						<small>Copyright &copy; Ohmarr.github.io 2023</small>
+						Copyright &copy; Ohmarr.github.io 2023
 					</a>
 				</div>
 			</div>
@@ -453,7 +345,9 @@
 		</a>
 	</div>
 	<!-- ––––––––––––––––––––––––––––––––––––– * END FOOTER / COPYRIGHT SECTION * ––––––––––––––––––––––––––––––––––––– -->
-
 </body>
 
 </html>
+
+
+
