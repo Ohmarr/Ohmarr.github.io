@@ -36,8 +36,9 @@
 	}
 
 	#job-title-section {
+		width: 100%;
 		margin: 0 0 0 0;
-		justify-content: center;
+		justify-content:space-between;
 
 		.profile-job-button {
 			font-size: 1.33rem;
@@ -143,7 +144,7 @@
 		flex-wrap: wrap;
 
 		.about-column {
-			margin: 0 20px 0 0;
+			margin: 0 5px 0 5px;
 			flex-basis: calc(50% - 20px);
 			word-spacing: normal;
 			width: 100%;
@@ -156,8 +157,8 @@
 				font-family: $font-6;
 				text-align: justify;
 				line-height: 1.5;
-				padding: 10px 20px 10px 20px;
-				margin: 0 20px 0 0;
+				padding: 20px;
+				margin: 0 0 0 0;
 			}
 		}
 	}
@@ -305,16 +306,16 @@
 
 	#about-section {
 		.about-content {
-			display: flex;
-			flex-direction: column;
+			display:block;
+			// flex-direction:unset;
 			overflow-y: auto;
-			max-height: 60vh;
+			// max-height: 60vh;
 
 			.about-column {
 				.about-p-text {
 					font-size: 16px;
 					margin: auto;
-					padding: 0%;
+					padding: auto;
 				}
 			}
 		}
@@ -326,30 +327,11 @@
 
 			#resume-button {
 				border: 0.15rem solid $tertiary;
-				margin: 0 0 0 0;
+				margin: 0 25% 0 25%;
 				padding: 0 0 0 0;
 				font-size: 1.0rem;
+				width: 50%;
 			}
-		}
-	}
-
-
-	#job-title-section {
-		margin: 0 0 0 0;
-		padding: 0 0 0 0;
-		justify-content: space-around;
-
-		.row {
-			flex-direction: column;
-		}
-
-		.profile-job-button {
-			font-size: 1rem;
-			font-weight: 700;
-			padding: 0 0 20px 00;
-			margin: 0 0 20px 1%;
-			border-radius: 0.5rem;
-			display: flex;
 		}
 	}
 

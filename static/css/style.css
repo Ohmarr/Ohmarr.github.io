@@ -13351,11 +13351,12 @@ footer #footer-copyright-section #copyright-text {
   font-weight: 800;
 }
 #profile-section #job-title-section {
+  width: 100%;
   margin: 0 0 0 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 #profile-section #job-title-section .profile-job-button {
   font-size: 1.33rem;
@@ -13450,7 +13451,7 @@ footer #footer-copyright-section #copyright-text {
   flex-wrap: wrap;
 }
 #about-section .about-content .about-column {
-  margin: 0 20px 0 0;
+  margin: 0 5px 0 5px;
   -webkit-flex-basis: calc(50% - 20px);
   -ms-flex-preferred-size: calc(50% - 20px);
   flex-basis: calc(50% - 20px);
@@ -13463,8 +13464,8 @@ footer #footer-copyright-section #copyright-text {
   font-family: "Raleway", sans-serif;
   text-align: justify;
   line-height: 1.5;
-  padding: 10px 20px 10px 20px;
-  margin: 0 20px 0 0;
+  padding: 20px;
+  margin: 0 0 0 0;
 }
 #about-section #resume-section {
   display: -webkit-box;
@@ -13604,22 +13605,13 @@ footer #footer-copyright-section #copyright-text {
   }
 
   #about-section .about-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
     overflow-y: auto;
-    max-height: 60vh;
   }
   #about-section .about-content .about-column .about-p-text {
     font-size: 16px;
     margin: auto;
-    padding: 0%;
+    padding: auto;
   }
   #about-section #resume-section {
     -webkit-box-pack: center;
@@ -13630,35 +13622,10 @@ footer #footer-copyright-section #copyright-text {
   }
   #about-section #resume-section #resume-button {
     border: 0.15rem solid #510202;
-    margin: 0 0 0 0;
+    margin: 0 25% 0 25%;
     padding: 0 0 0 0;
     font-size: 1rem;
-  }
-
-  #job-title-section {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  #job-title-section .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  #job-title-section .profile-job-button {
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0 0 20px 0;
-    margin: 0 0 20px 1%;
-    border-radius: 0.5rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    width: 50%;
   }
 
   .btn.btn-lg, .btn-group-lg > .btn {
